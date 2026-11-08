@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A page published as-is</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <p class="eyebrow">Vault Publisher</p>
+  <h1>This page was published byte for byte</h1>
+
+  <p>
+    No stylesheet of the plugin's was added to this document, and no script.
+    What is on the server is what is in the vault. The page you are reading has
+    none of the furniture a published note gets &mdash; no command bar, no vault
+    tree, no outline rail &mdash; because nothing rendered it.
+  </p>
+
+  <img src="art/panel.svg" alt="A decorative panel in three bands of colour." width="520" height="120">
+
+  <h2>Three files travelled to get here</h2>
+
+  <ul>
+    <li><code>index.html</code> &mdash; this page, because it was in scope and
+      the as-is toggle was on.</li>
+    <li><code>styles.css</code> &mdash; because this page names it in a
+      <code>&lt;link&gt;</code>.</li>
+    <li><code>art/panel.svg</code> &mdash; because this page names it in an
+      <code>&lt;img&gt;</code>, at a relative path that still resolves.</li>
+  </ul>
+
+  <p>
+    And a fourth, which is the interesting one: <code>art/texture.svg</code> is
+    named by nothing in this document. It is a
+    <code>background-image</code> in <code>styles.css</code>, and it is behind
+    the box below. The build resolved it <em>against the stylesheet</em> rather
+    than against this page, which is what a browser does.
+  </p>
+
+  <div class="textured">
+    <p>If this box has a texture behind it, that resolution worked.</p>
+  </div>
+
+  <h2>What would have been reported</h2>
+
+  <p>
+    A reference that resolves to nothing is named in the build report, together
+    with the file that made it &mdash; rather than being dropped in silence.
+    That includes the ones only a stylesheet knows about.
+  </p>
+
+  <p class="back">
+    The explanation lives in a note beside this file:
+    <code>About the as-is demo.md</code>.
+  </p>
+</main>
+</body>
+</html>

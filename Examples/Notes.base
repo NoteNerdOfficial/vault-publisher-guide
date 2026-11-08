@@ -1,0 +1,22 @@
+filters:
+  and:
+    - 'file.ext == "md"'
+    - file.hasTag("feature")
+
+properties:
+  file.name:
+    displayName: Note
+  tags:
+    displayName: Tags
+  updated:
+    displayName: Updated
+
+views:
+  - type: table
+    name: "Feature notes"
+    order:
+      - file.name
+      - tags
+      - updated
+    summaries:
+      updated: Latest

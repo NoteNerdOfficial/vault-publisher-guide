@@ -1,0 +1,41 @@
+/*
+ * An example custom stylesheet for Vault Publisher.
+ *
+ * Type `Examples/site-tokens.css` into Settings -> Vault Publisher ->
+ * Appearance -> Custom stylesheet, then build. These rules are appended to the
+ * end of assets/site.css, so redeclaring a token is all it takes.
+ *
+ * Clear the setting to go back to the theme as shipped.
+ */
+
+:root {
+  /* The link and accent colour, used for links, syntax and callout marks. */
+  --osp-link: #a8431a;
+  --osp-accent: #a8431a;
+
+  /* A serif body, with the UI left as it was. */
+  --osp-font-body: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+
+  /* How wide a line of text is allowed to get. */
+  --osp-measure: 64ch;
+
+  /* Slightly softer corners than Studio ships with. */
+  --osp-radius: 12px;
+}
+
+/*
+ * The theme's tokens are declared inside a cascade layer and these rules are
+ * not, which is why this block also holds in dark mode. Without the layer, a
+ * dark value sits under a selector that outranks a bare :root -- so an
+ * override written this way would work in light and quietly stop working when
+ * the reader's system went dark.
+ *
+ * If you want a *different* colour in dark rather than the same one, say so
+ * explicitly:
+ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --osp-link: #f0975f;
+    --osp-accent: #f0975f;
+  }
+}
