@@ -19,23 +19,23 @@
 
 
 <p dir="auto">A small feature with one useful subtlety.</p>
-<p dir="auto"><strong>Link to the source repository</strong> puts a <strong>Source repo</strong> link in the published<br>
-site's bar. It is off by default, because a link in the bar is a decision about<br>
+<p dir="auto"><strong>Link to the source repository</strong> puts a <strong>Source repo</strong> link in the published
+site's bar. It is off by default, because a link in the bar is a decision about
 the published site and not one to make on somebody's behalf.</p>
-<p dir="auto"><strong>Repository address</strong> is where it points. Leave it blank and it falls back to<br>
-the repository the site publishes to, which is the right guess once you have<br>
+<p dir="auto"><strong>Repository address</strong> is where it points. Leave it blank and it falls back to
+the repository the site publishes to, which is the right guess once you have
 asked for the link at all, and no guess at all before that.</p>
 <h2 data-heading="Why you might type something else" dir="auto" id="why-you-might-type-something-else" data-osp-anchored=""><a class="osp-heading-self" href="#why-you-might-type-something-else" data-osp-heading-self="" draggable="false">Why you might type something <span class="osp-heading-tail">else<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
-<p dir="auto">The repository the <em>site</em> lives in is not necessarily the repository the<br>
-<em>vault</em> lives in. A common arrangement is notes in one repository and a<br>
-<code>gh-pages</code> branch of another, and a reader following "Source repo" wants the<br>
+<p dir="auto">The repository the <em>site</em> lives in is not necessarily the repository the
+<em>vault</em> lives in. A common arrangement is notes in one repository and a
+<code>gh-pages</code> branch of another, and a reader following "Source repo" wants the
 notes.</p>
 <h2 data-heading="How it reaches the build" dir="auto" id="how-it-reaches-the-build" data-osp-anchored=""><a class="osp-heading-self" href="#how-it-reaches-the-build" data-osp-heading-self="" draggable="false">How it reaches the <span class="osp-heading-tail">build<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
-<p dir="auto">Resolved before the build starts. Three questions (is the link on, what was<br>
-typed, and what should it fall back to) are settled into one answer: either<br>
+<p dir="auto">Resolved before the build starts. Three questions (is the link on, what was
+typed, and what should it fall back to) are settled into one answer: either
 there is an address to put in the bar, or there is not.</p>
-<p dir="auto">The build is never handed your publish target or your API host, so it could<br>
-not work this out for itself even if it wanted to. That is deliberate: what<br>
+<p dir="auto">The build is never handed your publish target or your API host, so it could
+not work this out for itself even if it wanted to. That is deliberate: what
 the build receives is the answer, not the question.</p>
 <h2 data-heading="Related" dir="auto" id="related" data-osp-anchored=""><a class="osp-heading-self" href="#related" data-osp-heading-self="" draggable="false"><span class="osp-heading-tail">Related<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
 <ul>

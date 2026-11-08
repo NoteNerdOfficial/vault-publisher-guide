@@ -60,7 +60,7 @@
 </table></div>
 <p dir="auto">The first three also have buttons in the settings panel.</p>
 <h2 data-heading="Running something on load" dir="auto" id="running-something-on-load" data-osp-anchored=""><a class="osp-heading-self" href="#running-something-on-load" data-osp-heading-self="" draggable="false">Running something on <span class="osp-heading-tail">load<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
-<p dir="auto">The plugin's <code>data.json</code> has an <code>autoRun</code> key, which runs one thing when the<br>
+<p dir="auto">The plugin's <code>data.json</code> has an <code>autoRun</code> key, which runs one thing when the
 plugin loads:</p>
 <div class="osp-table-wrap osp-scroller"><table>
 <thead>
@@ -92,19 +92,19 @@ plugin loads:</p>
 </tr>
 </tbody>
 </table></div>
-<p dir="auto"><strong>Build</strong> and <strong>publish</strong> are offered in the settings panel as <strong>Run<br>
-automatically</strong> / <strong>What to run</strong>. The other two exist so the whole loop can be<br>
+<p dir="auto"><strong>Build</strong> and <strong>publish</strong> are offered in the settings panel as <strong>Run
+automatically</strong> / <strong>What to run</strong>. The other two exist so the whole loop can be
 driven from a shell during development.</p>
 <h3 data-heading="Why this exists" dir="auto" id="why-this-exists" data-osp-anchored=""><a class="osp-heading-self" href="#why-this-exists" data-osp-heading-self="" draggable="false">Why this <span class="osp-heading-tail">exists<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h3>
-<p dir="auto">Obsidian offers no way to invoke a command from outside the app. Clicking<br>
-through the UI for every iteration produces measurements nobody can reproduce,<br>
-so instead you write <code>data.json</code>, touch the build, and the run happens on<br>
+<p dir="auto">Obsidian offers no way to invoke a command from outside the app. Clicking
+through the UI for every iteration produces measurements nobody can reproduce,
+so instead you write <code>data.json</code>, touch the build, and the run happens on
 reload.</p>
-<p dir="auto">With the <a data-tooltip-position="top" aria-label="https://github.com/pjeby/hot-reload" rel="noopener" class="external-link" href="https://github.com/pjeby/hot-reload" target="_blank">hot-reload</a> community plugin<br>
-installed in the vault, deploying a new <code>main.js</code> is enough on its own: the<br>
+<p dir="auto">With the <a data-tooltip-position="top" aria-label="https://github.com/pjeby/hot-reload" rel="noopener" class="external-link" href="https://github.com/pjeby/hot-reload" target="_blank">hot-reload</a> community plugin
+installed in the vault, deploying a new <code>main.js</code> is enough on its own: the
 reload fires on the file change and the <code>autoRun</code> fires with it.</p>
 <div data-callout-metadata="" data-callout-fold="" data-callout="note" class="callout"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-pencil"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path><path d="m15 5 4 4"></path></svg></div><div class="callout-title-inner"><code>diagnose</code> needs to be told which note</div></div><div class="callout-content">
-<p dir="auto">Because the note worth sampling is whichever one is rendering wrongly, and<br>
+<p dir="auto">Because the note worth sampling is whichever one is rendering wrongly, and
 nothing can work that out for you. Set <code>diagnosePath</code> to its vault path.</p>
 </div></div>
 <h2 data-heading="Related" dir="auto" id="related" data-osp-anchored=""><a class="osp-heading-self" href="#related" data-osp-heading-self="" draggable="false"><span class="osp-heading-tail">Related<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>

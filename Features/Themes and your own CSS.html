@@ -19,7 +19,7 @@
 
 
 <h2 data-heading="The five themes" dir="auto" id="the-five-themes" data-osp-anchored=""><a class="osp-heading-self" href="#the-five-themes" data-osp-heading-self="" draggable="false">The five <span class="osp-heading-tail">themes<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
-<p dir="auto"><strong>Settings → Appearance → Style</strong>, with a live specimen beside the dropdown so<br>
+<p dir="auto"><strong>Settings → Appearance → Style</strong>, with a live specimen beside the dropdown so
 you can see a theme before you build with it:</p>
 <div class="osp-table-wrap osp-scroller"><table>
 <thead>
@@ -51,63 +51,63 @@ you can see a theme before you build with it:</p>
 </tr>
 </tbody>
 </table></div>
-<p dir="auto">A change applies the next time the site is built. Every theme is built in both<br>
+<p dir="auto">A change applies the next time the site is built. Every theme is built in both
 light and dark, and a reader can pin either.</p>
 <h2 data-heading="Which one it opens in" dir="auto" id="which-one-it-opens-in" data-osp-anchored=""><a class="osp-heading-self" href="#which-one-it-opens-in" data-osp-heading-self="" draggable="false">Which one it opens <span class="osp-heading-tail">in<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
-<p dir="auto"><strong>Settings → Appearance → Opens in</strong> decides what a first-time visitor sees:<br>
-their own system setting, which is the default, or light or dark whatever<br>
+<p dir="auto"><strong>Settings → Appearance → Opens in</strong> decides what a first-time visitor sees:
+their own system setting, which is the default, or light or dark whatever
 their machine says.</p>
-<p dir="auto">The two explicit choices are a real override rather than a preference. They<br>
-are written into each page at build time, so they hold before the first paint<br>
-and with JavaScript switched off, and the stylesheet is built so that pinning<br>
+<p dir="auto">The two explicit choices are a real override rather than a preference. They
+are written into each page at build time, so they hold before the first paint
+and with JavaScript switched off, and the stylesheet is built so that pinning
 to light still wins on a dark machine.</p>
-<p dir="auto">A reader who works the toggle in the bar beats all of it, on that page and<br>
-every page afterwards. Their choice is theirs, and the setting only decides<br>
+<p dir="auto">A reader who works the toggle in the bar beats all of it, on that page and
+every page afterwards. Their choice is theirs, and the setting only decides
 where they start.</p>
 <h2 data-heading="Why a theme is only a palette" dir="auto" id="why-a-theme-is-only-a-palette" data-osp-anchored=""><a class="osp-heading-self" href="#why-a-theme-is-only-a-palette" data-osp-heading-self="" draggable="false">Why a theme is only a <span class="osp-heading-tail">palette<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
-<p dir="auto">A theme here is a set of custom properties rather than a fork of the<br>
-stylesheet. Every rule in the site's CSS is written against <code>--osp-*</code> names<br>
-that the theme declares, so a sixth look is a palette and a type pairing, not<br>
+<p dir="auto">A theme here is a set of custom properties rather than a fork of the
+stylesheet. Every rule in the site's CSS is written against <code>--osp-*</code> names
+that the theme declares, so a sixth look is a palette and a type pairing, not
 a second copy of the layout to keep in step with the first.</p>
 <p dir="auto">That is also what makes the escape hatch cheap.</p>
 <h2 data-heading="Your own stylesheet" dir="auto" id="your-own-stylesheet" data-osp-anchored=""><a class="osp-heading-self" href="#your-own-stylesheet" data-osp-heading-self="" draggable="false">Your own <span class="osp-heading-tail">stylesheet<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
-<p dir="auto">For the vault that wants one of the five with its own blue: name a CSS file in<br>
-the vault under <strong>Appearance → Custom stylesheet</strong>, and its rules are appended<br>
-to the end of <code>assets/site.css</code> on every build. Redeclaring a token is the<br>
+<p dir="auto">For the vault that wants one of the five with its own blue: name a CSS file in
+the vault under <strong>Appearance → Custom stylesheet</strong>, and its rules are appended
+to the end of <code>assets/site.css</code> on every build. Redeclaring a token is the
 whole of it:</p>
 <figure class="osp-code" data-osp-code="" data-osp-lang="css"><figcaption class="osp-code-bar"><span class="osp-code-lang">CSS</span><div class="osp-code-tools" data-osp-code-tools="" hidden=""><button type="button" class="osp-code-btn" data-osp-wrap="" aria-pressed="false" title="Wrap long lines"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 17h5"></path><path d="M4 12h13.5a3 3 0 0 1 0 6H15"></path><path d="m17 15-2.5 3 2.5 3"></path></svg><span class="osp-code-btn-label">Wrap</span></button><button type="button" class="osp-code-btn" data-osp-copy="" title="Copy this block"><svg class="osp-icon-sm osp-code-icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M5 15H4.5A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5V5"></path></svg><svg class="osp-icon-sm osp-code-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg><span class="osp-code-btn-label">Copy</span></button></div></figcaption><pre class="language-css osp-scroller"><code class="language-css is-loaded"><span class="token selector"><span class="token pseudo-class">:root</span></span> <span class="token punctuation">{</span>
   <span class="token variable">--osp-link</span><span class="token punctuation">:</span> <span class="token hexcode color">#a8431a</span><span class="token punctuation">;</span>
   <span class="token variable">--osp-font-body</span><span class="token punctuation">:</span> <span class="token string">"Iowan Old Style"</span><span class="token punctuation">,</span> Georgia<span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
-  <span class="token variable">--osp-measure</span><span class="token punctuation">:</span> <span class="token number">64</span><span class="token unit">ch</span><span class="token punctuation">;</span>
+  <span class="token variable">--osp-measure</span><span class="token punctuation">:</span> <span class="token number">40</span><span class="token unit">rem</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre></figure>
 <div data-callout-metadata="" data-callout-fold="" data-callout="example" class="callout"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-list"><path d="M3 5h.01"></path><path d="M3 12h.01"></path><path d="M3 19h.01"></path><path d="M8 5h13"></path><path d="M8 12h13"></path><path d="M8 19h13"></path></svg></div><div class="callout-title-inner">There is one in this vault</div></div><div class="callout-content">
-<p dir="auto"><code>Examples/site-tokens.css</code>. Type that path into <strong>Custom stylesheet</strong>, build<br>
+<p dir="auto"><code>Examples/site-tokens.css</code>. Type that path into <strong>Custom stylesheet</strong>, build
 the preview, and the site changes colour. Clear the field to go back.</p>
 </div></div>
-<p dir="auto">The file can live in a hidden folder (<code>.obsidian/snippets/</code> is a reasonable<br>
-place for someone who already writes CSS for Obsidian) because it is read<br>
+<p dir="auto">The file can live in a hidden folder (<code>.obsidian/snippets/</code> is a reasonable
+place for someone who already writes CSS for Obsidian) because it is read
 through the vault adapter rather than the file index.</p>
 <h3 data-heading="Why your override holds in dark mode" dir="auto" id="why-your-override-holds-in-dark-mode" data-osp-anchored=""><a class="osp-heading-self" href="#why-your-override-holds-in-dark-mode" data-osp-heading-self="" draggable="false">Why your override holds in dark <span class="osp-heading-tail">mode<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h3>
-<p dir="auto">The theme's tokens are declared inside a <strong>cascade layer</strong> and your rules are<br>
+<p dir="auto">The theme's tokens are declared inside a <strong>cascade layer</strong> and your rules are
 not, which is what makes that <code>:root</code> block work in dark as well as light.</p>
-<p dir="auto">Without the layer, a dark value sits under a selector that outranks a bare<br>
-<code>:root</code>, so an override written the obvious way worked in light and quietly<br>
-stopped working when the reader's system went dark. The layer is the fix, and<br>
+<p dir="auto">Without the layer, a dark value sits under a selector that outranks a bare
+<code>:root</code>, so an override written the obvious way worked in light and quietly
+stopped working when the reader's system went dark. The layer is the fix, and
 it means you do not have to know any of this.</p>
 <h2 data-heading="Two failures that are reported rather than silent" dir="auto" id="two-failures-that-are-reported-rather-than-silent" data-osp-anchored=""><a class="osp-heading-self" href="#two-failures-that-are-reported-rather-than-silent" data-osp-heading-self="" draggable="false">Two failures that are reported rather than <span class="osp-heading-tail">silent<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
-<p dir="auto">Both would otherwise produce a site that looks exactly like the one before it,<br>
+<p dir="auto">Both would otherwise produce a site that looks exactly like the one before it,
 which is the worst kind of failure:</p>
 <ul>
-<li dir="auto"><strong>A path that is not in the vault</strong> is flagged in the settings panel, and<br>
+<li dir="auto"><strong>A path that is not in the vault</strong> is flagged in the settings panel, and
 lands in the build report's skipped list.</li>
-<li dir="auto"><strong>A path inside the build's own output folders</strong> is refused before it is<br>
-read. Appended to itself, the stylesheet would double in size on every<br>
+<li dir="auto"><strong>A path inside the build's own output folders</strong> is refused before it is
+read. Appended to itself, the stylesheet would double in size on every
 build.</li>
 </ul>
 <h2 data-heading="What does not travel" dir="auto" id="what-does-not-travel" data-osp-anchored=""><a class="osp-heading-self" href="#what-does-not-travel" data-osp-heading-self="" draggable="false">What does not <span class="osp-heading-tail">travel<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
-<p dir="auto">The stylesheet's own vault path never reaches the output. <code>assets/site.css</code> is<br>
-published; a banner comment naming the source file would hand every reader of<br>
+<p dir="auto">The stylesheet's own vault path never reaches the output. <code>assets/site.css</code> is
+published; a banner comment naming the source file would hand every reader of
 the site a piece of your folder structure.</p>
 <h2 data-heading="Related" dir="auto" id="related" data-osp-anchored=""><a class="osp-heading-self" href="#related" data-osp-heading-self="" draggable="false"><span class="osp-heading-tail">Related<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
 <ul>
@@ -167,7 +167,7 @@ whole of it:
 :root {
   --osp-link: #a8431a;
   --osp-font-body: &quot;Iowan Old Style&quot;, Georgia, serif;
-  --osp-measure: 64ch;
+  --osp-measure: 40rem;
 }
 ```
 
