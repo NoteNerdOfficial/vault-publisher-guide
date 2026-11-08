@@ -1,0 +1,105 @@
+/*
+ * The stylesheet this page names. It travels because the page points at it.
+ *
+ * It also points at art/texture.svg, which nothing else in the folder
+ * mentions -- the build resolves that against this file's own location, the
+ * way a browser would, rather than against the page that linked here.
+ */
+
+:root {
+  --ink: #1b1b1f;
+  --muted: #5b5b66;
+  --paper: #fbfaf8;
+  --edge: #e3e0da;
+  --signal: #8a3f14;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 3rem 1.25rem 5rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.65 "Iowan Old Style", Georgia, serif;
+}
+
+main { max-width: 40rem; margin: 0 auto; }
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--signal);
+}
+
+h1 {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.8rem, 1.3rem + 2vw, 2.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin: 2.5rem 0 0.75rem;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0 0 1.1rem; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  border: 1px solid var(--edge);
+  border-radius: 10px;
+}
+
+ul { margin: 0 0 1.1rem; padding-left: 1.3rem; }
+li { margin-bottom: 0.4rem; }
+
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.875em;
+  background: #f1efea;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+/* The reference that only this file knows about. */
+.textured {
+  margin: 1.5rem 0 2rem;
+  padding: 1.75rem;
+  border: 1px solid var(--edge);
+  border-radius: 10px;
+  background-color: #fff;
+  background-image: url("art/texture.svg");
+  background-repeat: repeat;
+}
+
+.textured p { margin: 0; font-weight: 600; }
+
+.back {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--edge);
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f3f1ed;
+    --muted: #a6a39c;
+    --paper: #15151a;
+    --edge: #32323a;
+    --signal: #e0905c;
+  }
+  code { background: #23232b; }
+  .textured { background-color: #1c1c23; }
+}
