@@ -17,7 +17,7 @@
   --osp-font-body: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
 
   /* How wide a line of text is allowed to get. */
-  --osp-measure: 64ch;
+  --osp-measure: 40rem;
 
   /* Slightly softer corners than Studio ships with. */
   --osp-radius: 12px;

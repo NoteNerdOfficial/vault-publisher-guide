@@ -65,7 +65,7 @@ export function tagSlug(name: string): string {
 ```css
 :root {
   --osp-link: #a8431a;
-  --osp-measure: 64ch;
+  --osp-measure: 40rem;
 }
 ```
 
