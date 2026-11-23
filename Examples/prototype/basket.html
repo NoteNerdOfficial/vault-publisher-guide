@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basket prototype</title>
+<link rel="stylesheet" href="basket.css">
+</head>
+<body>
+  <header>
+    <h1>Your basket</h1>
+    <p><span id="count">12</span> items</p>
+  </header>
+
+  <div class="layout">
+    <div class="list" id="items">
+      <div class="row"><span class="name">Notebook, dotted</span><span class="price">£12</span><button type="button">Remove</button></div>
+      <div class="row"><span class="name">Fountain pen</span><span class="price">£38</span><button type="button">Remove</button></div>
+      <div class="row"><span class="name">Ink, blue-black</span><span class="price">£9</span><button type="button">Remove</button></div>
+      <div class="row"><span class="name">Desk lamp</span><span class="price">£54</span><button type="button">Remove</button></div>
+      <div class="row"><span class="name">Index cards</span><span class="price">£4</span><button type="button">Remove</button></div>
+      <div class="row"><span class="name">Pencil case</span><span class="price">£15</span><button type="button">Remove</button></div>
+      <div class="row"><span class="name">Sticky notes</span><span class="price">£3</span><button type="button">Remove</button></div>
+      <div class="row"><span class="name">Bookmark, brass</span><span class="price">£7</span><button type="button">Remove</button></div>
+      <div class="row"><span class="name">Washi tape</span><span class="price">£5</span><button type="button">Remove</button></div>
+      <div class="row"><span class="name">Desk mat</span><span class="price">£22</span><button type="button">Remove</button></div>
+      <div class="row"><span class="name">Letter tray</span><span class="price">£18</span><button type="button">Remove</button></div>
+      <div class="row"><span class="name">Rubber stamp</span><span class="price">£11</span><button type="button">Remove</button></div>
+    </div>
+
+    <aside class="summary">
+      <h2>Summary</h2>
+      <dl>
+        <div><dt>Items</dt><dd id="subtotal">£198</dd></div>
+        <div><dt>Delivery</dt><dd>chosen next</dd></div>
+        <div class="total"><dt>Total</dt><dd id="total">£198</dd></div>
+      </dl>
+      <button type="button" class="primary" id="open-delivery">Choose delivery</button>
+    </aside>
+  </div>
+
+  <!-- A bottom sheet on a phone, a drawer from the right on anything wider.
+       Always in the page; slid off-screen until opened. -->
+  <section class="sheet" id="delivery" aria-label="Delivery options">
+    <h2>Delivery</h2>
+    <label><input type="radio" name="delivery" checked> Standard, 3 to 5 days, free</label>
+    <label><input type="radio" name="delivery"> Next day, £5</label>
+    <button type="button" class="primary" id="pay">Pay now</button>
+  </section>
+
+<script>
+  var sheet = document.getElementById("delivery");
+  document.getElementById("open-delivery").addEventListener("click", function () {
+    sheet.classList.add("is-open");
+  });
+  // Tapping anywhere outside the sheet closes it.
+  document.addEventListener("click", function (event) {
+    if (!sheet.contains(event.target) && event.target.id !== "open-delivery") {
+      sheet.classList.remove("is-open");
+    }
+  }, true);
+
+  document.getElementById("pay").addEventListener("click", function () {
+    sheet.classList.remove("is-open");
+    var toast = document.createElement("div");
+    toast.className = "toast";
+    toast.setAttribute("role", "status");
+    toast.textContent = "Order placed. This is only a prototype.";
+    document.body.appendChild(toast);
+    setTimeout(function () { toast.remove(); }, 2500);
+  });
+
+  function recount() {
+    var rows = document.querySelectorAll(".row");
+    var sum = 0;
+    rows.forEach(function (row) {
+      sum += Number(row.querySelector(".price").textContent.replace(/[^0-9]/g, ""));
+    });
+    document.getElementById("count").textContent = rows.length;
+    document.getElementById("subtotal").textContent = "£" + sum;
+    document.getElementById("total").textContent = "£" + sum;
+  }
+
+  // "Remove" builds a confirmation popup and takes it out of the page again
+  // when it is answered, the way many apps do.
+  document.getElementById("items").addEventListener("click", function (event) {
+    var button = event.target.closest(".row button");
+    if (!button) return;
+    var row = button.closest(".row");
+    var backdrop = document.createElement("div");
+    backdrop.className = "popup-backdrop";
+    backdrop.innerHTML =
+      '<div class="popup" role="dialog" aria-modal="true">' +
+      "<p>Remove <strong></strong> from your basket?</p>" +
+      '<div class="actions"><button type="button" class="keep">Keep it</button>' +
+      '<button type="button" class="danger">Remove</button></div></div>';
+    backdrop.querySelector("strong").textContent = row.querySelector(".name").textContent;
+    backdrop.querySelector(".keep").onclick = function () { backdrop.remove(); };
+    backdrop.querySelector(".danger").onclick = function () {
+      row.remove();
+      backdrop.remove();
+      recount();
+    };
+    document.body.appendChild(backdrop);
+  });
+</script>
+</body>
+</html>
