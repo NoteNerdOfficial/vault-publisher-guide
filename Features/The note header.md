@@ -1,6 +1,6 @@
 ---
 updated: 2026-11-08
-pinned: 5
+pinned: 6
 tags:
   - feature
   - frontmatter

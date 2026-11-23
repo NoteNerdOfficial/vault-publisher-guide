@@ -1,6 +1,6 @@
 ---
 updated: 2026-11-06
-pinned: 3
+pinned: 4
 tags:
   - guide
   - safety

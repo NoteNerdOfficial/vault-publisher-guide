@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-05
+updated: 2026-11-23
 tags:
   - example
   - html
@@ -11,10 +11,12 @@ This folder is a hand-written web page, published byte for byte. It is an
 ordinary note explaining a folder of files that is *not* a note. Read it
 first.
 
-> [!important] It will not publish until you turn the toggle on
-> **Settings → Vault Publisher → Publish HTML files as-is**. It is off by
-> default for a good reason: vaults are full of HTML nobody wrote as a web
-> page, and turning this on silently would publish all of it.
+> [!important] It publishes because this vault turns a toggle on
+> **Settings → Vault Publisher → Publish HTML files as-is** is on in this
+> vault, so the examples here work. In a vault of your own it is off by
+> default, for a good reason: vaults are full of HTML nobody wrote as a web
+> page, and turning this on silently would publish all of it. Turn it off
+> here and build again to see the page left out.
 
 ## What is in the folder
 

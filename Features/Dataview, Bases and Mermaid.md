@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-05
+updated: 2026-11-23
 tags:
   - feature
   - dataview
@@ -67,9 +67,8 @@ So:
 
 ## Try it
 
-- [[Mermaid and code]]: a diagram and a highlighted code block, so you can
-  confirm both arrived.
-- [[A base, embedded]]: a Bases view, if your Obsidian has Bases.
+- [[See it working]]: diagrams, highlighted code, a Bases view and a
+  Dataview query on one page, so you can confirm each one arrived.
 
 Build the preview and compare the page against what you see in Obsidian. That
 comparison is the whole test.

@@ -43,17 +43,19 @@ does not scatter the review.
 A prototype published with **Publish HTML files as-is** gets the same overlay
 as a note, and the overlay follows what the app is doing.
 
-> [!example] Try it on the review demo
-> `Examples/review-prototype` is a basket prototype in a phone frame, with a
-> scrolling list, a bottom sheet, a popup and a second screen.
-> [[About the review demo]] walks through each of the behaviours below.
+> [!example] Try it on the prototype demo
+> [[See it working]] embeds a basket prototype with a scrolling list, a
+> sheet and a popup. [[About the prototype demo]] walks through each of the
+> behaviours below.
 
 **One toolbar inside a phone or tablet frame.** When a frame page shows the
 app in an `<iframe>`, the outer page carries the only toolbar, and pins land
 on what is on the screen. A comment remembers which screen of the app it was
 left on, the panel names that screen, and opening the comment sends the frame
 back to it. The screen has to be published from the same site as the frame,
-which it is when the prototype is one folder.
+which it is when the prototype is one folder. A prototype embedded in a note
+is reviewed the same way: the note has the toolbar, and pins land inside the
+embed.
 
 **Pins follow sheets, drawers and popups.** A comment left inside a dialog, a
 bottom sheet, a drawer or a popup belongs to it. The pin moves with it as it
@@ -144,7 +146,7 @@ everyone who opens the site sees every comment as a pin.
 > > Choose delivery
 >
 > ---
-> Left on [Basket](https://your-username.github.io/your-site-repo/Examples/review-prototype/screens/basket.html).
+> Left on [Basket](https://your-username.github.io/your-site-repo/Examples/prototype/basket.html).
 >
 > <!-- osp-review {"v":1,"id":"…","page":"…","block":"…","priority":"medium"} -->
 > ```
@@ -248,6 +250,6 @@ See [[Filing comments as issues]].
 
 ## Related
 
-- [[About the review demo]]: a prototype to try all of this on.
+- [[About the prototype demo]]: a prototype to try all of this on.
 - [[Filing comments as issues]]: GitHub, Jira, Asana.
 - [[Commands and automation]]: the review commands.

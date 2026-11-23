@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-22
+updated: 2026-11-23
 pinned: 1
 tags:
   - guide
@@ -98,11 +98,10 @@ That one decision explains most of the design, and most of the limits.
 
 ## Examples you can build
 
-- [[Mermaid and code]]: a diagram and some syntax highlighting, so you can
-  check both survived.
-- [[A base, embedded]]: a Bases view re-emitted as a table.
+- [[See it working]]: a prototype with phone, tablet and desktop widths,
+  diagrams, a Bases view, a Dataview query and highlighted code, on one page.
 - [[About the as-is demo]]: a hand-written web page published byte for byte.
-- [[About the review demo]]: a prototype in a phone frame, with a sheet and a
-  popup, for trying the review overlay on an app.
+- [[About the prototype demo]]: the prototype on that page, and how to
+  review it.
 - `Scratch/`: a folder that is **not** published, and the build report says
   so. See [[Choosing what gets published]].

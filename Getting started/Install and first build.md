@@ -1,6 +1,6 @@
 ---
 updated: 2026-11-08
-pinned: 2
+pinned: 3
 tags:
   - guide
   - setup

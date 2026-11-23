@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-22
+updated: 2026-11-23
 tags:
   - feature
   - html
@@ -26,7 +26,8 @@ would find out from the live site.
 
 > [!example] Try it in this vault
 > `Examples/html-as-is/` is a hand-written page with a stylesheet and an SVG
-> beside it. Turn the toggle on, build, and it publishes untouched. Read
+> beside it. The toggle is on in this vault, so build and it publishes
+> untouched. Read
 > [[About the as-is demo]] first.
 
 ## The files a page names travel with it
@@ -119,6 +120,7 @@ application publishes wherever you point it: at `/dist/` by default, at
 - [[About the as-is demo]]: the example in this vault.
 - [[Known limits]]: a runtime-computed path, a Vite source page, and a locked
   site in a browser without service workers.
-- [[About the review demo]]: a prototype in a phone frame, for trying the
-  review overlay on an app.
+- [[See it working]]: a prototype embedded in a note, with its width
+  buttons.
+- [[About the prototype demo]]: that prototype, and reviewing it.
 - [[Choosing what gets published]]: the scope still governs all of this.
