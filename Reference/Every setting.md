@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-08
+updated: 2026-11-22
 tags:
   - reference
   - settings
@@ -10,31 +10,18 @@ tags:
 The settings screen, in the order it appears. Each row says what the default is
 and links to the note that explains it.
 
-## Actions
+## Preview and publish
 
 Not settings, but they sit at the top because they are what you came for.
 
 | | |
 | --- | --- |
 | **Build a preview** | Builds into `_site-preview/`. |
-| **Include a review overlay** | Off. Preview-only. → [[Reviewing a built site]] |
+| **Include a review overlay** | Off. Puts the overlay on the preview. → [[Reviewing a built site]] |
 | **Open the preview** / **Stop serving** | The local server, started on demand. |
 | **Publish to GitHub** | → [[Publishing to GitHub Pages]] |
 
-## Connection
-
-| Setting | Default | |
-| --- | --- | --- |
-| **Personal access token** | empty | Encrypted via the OS keychain. |
-| **Connection** | — | Checks the token and reports what it found. |
-| **Repository** | empty | `owner/repo`. |
-| **Branch** | `gh-pages` | |
-| **Custom domain** | empty | Written to `CNAME` on every publish. |
-| **GitHub Enterprise** | off | A different API base. |
-
-→ [[Publishing to GitHub Pages]]
-
-## Content
+## What to publish
 
 | Setting | Default | |
 | --- | --- | --- |
@@ -49,10 +36,17 @@ Not settings, but they sit at the top because they are what you came for.
 | **Refuse to publish if private notes are exposed** | off | The leak is reported either way. |
 | **Refuse to publish a shortened Bases view** | off | The gap is stated on the page either way. |
 | **Exclude folders** | empty | One vault path per line. No globs. |
+
+→ [[Choosing what gets published]]
+
+## Angular, React and other built apps
+
+| Setting | Default | |
+| --- | --- | --- |
 | **Publish folders whole** | empty | Each with a **Publish at** destination. |
 | **Find a built app** | — | Looks for a likely output folder. |
 
-→ [[Choosing what gets published]]
+→ [[Publishing a built app]]
 
 ## Appearance
 
@@ -61,17 +55,23 @@ Not settings, but they sit at the top because they are what you came for.
 | **Style** | `Studio` | Five themes, with a live specimen. Applies on the next build. |
 | **Opens in** | the visitor's system | Or pin the site to light or dark. A reader can still switch. |
 | **Custom stylesheet** | empty | A vault path, appended to `assets/site.css`. |
-
-→ [[Themes and your own CSS]]
-
-## Source link
-
-| Setting | Default | |
-| --- | --- | --- |
 | **Link to the source repository** | off | |
 | **Repository address** | empty | Blank falls back to the publish target. |
 
-→ [[Linking back to the source]]
+→ [[Themes and your own CSS]], and [[Linking back to the source]] for the last two.
+
+## GitHub
+
+| Setting | Default | |
+| --- | --- | --- |
+| **Personal access token** | empty | Encrypted via the OS keychain. |
+| **Connection** | — | Checks the token and reports what it found. |
+| **Repository** | empty | `owner/repo`. |
+| **Branch** | `gh-pages` | |
+| **Custom domain** | empty | Written to `CNAME` on every publish. |
+| **GitHub Enterprise** | off | A different API base. |
+
+→ [[Publishing to GitHub Pages]]
 
 ## Password
 
@@ -81,20 +81,31 @@ Not settings, but they sit at the top because they are what you came for.
 
 → [[Locking a site behind a password]]
 
-## Review
+## Leave a review
+
+Two halves, under their own headings.
+
+**In your preview**
 
 | Setting | Default | |
 | --- | --- | --- |
-| **Your name** | empty | Prefills the comment author. |
-| **Include in the published site** | off | Ships the overlay to readers. |
-| **Let readers write comments** | off | Nested under the above. |
-| **Where to send a review** | empty | An email address or URL, shown to readers. |
+| **Your name** | empty | Shown against your comments in the preview. Never written into the published site. |
 | **Review folder** | `_vault-publisher/review` | |
 | **Import review comments** | — | |
 
+**On the published site**
+
+| Setting | Default | |
+| --- | --- | --- |
+| **Include in the published site** | off | Ships the overlay to readers. Everything below is hidden while it is off. |
+| **Let readers write comments** | off | |
+| **How readers' comments reach you** | a file they send you | Or GitHub issues on the site's repository, when that repository can carry them. |
+| **Address shown when a reader exports** | empty | With a file. An email address or URL, shown to readers. |
+| **Sign-in service (optional)** | empty | With GitHub issues. Your own sign-in service's address. |
+
 → [[Reviewing a built site]]
 
-## Trackers
+## Issue tracker (preview builds only)
 
 | Setting | Default | |
 | --- | --- | --- |
@@ -109,7 +120,7 @@ Not settings, but they sit at the top because they are what you came for.
 
 → [[Filing comments as issues]]
 
-## Automation
+## On startup
 
 | Setting | Default | |
 | --- | --- | --- |

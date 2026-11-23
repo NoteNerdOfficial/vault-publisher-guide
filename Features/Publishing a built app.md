@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-05
+updated: 2026-11-22
 tags:
   - feature
   - html
@@ -118,5 +118,7 @@ application publishes wherever you point it: at `/dist/` by default, at
 
 - [[About the as-is demo]]: the example in this vault.
 - [[Known limits]]: a runtime-computed path, a Vite source page, and a locked
-  site's blob URLs.
+  site in a browser without service workers.
+- [[About the review demo]]: a prototype in a phone frame, for trying the
+  review overlay on an app.
 - [[Choosing what gets published]]: the scope still governs all of this.

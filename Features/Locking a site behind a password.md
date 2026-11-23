@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-06
+updated: 2026-11-22
 tags:
   - feature
   - encryption
@@ -53,6 +53,25 @@ because a script element whose load has already failed does not try again.
 Images are swapped in afterwards, so a page is readable before its pictures
 arrive.
 
+That only repairs what is in the page when it is written, so a locked site
+also publishes a service worker, `osp-sw.js`, at its root. Once a page has
+unlocked, every request it makes for a locked file goes through the worker,
+which fetches the encrypted file, decrypts it and answers with the plain one:
+a picture a script adds later, a `fetch()` for data, a lazily loaded chunk of
+a code-split application. While the worker is in charge the page is written
+exactly as published, with no blob URLs.
+
+The worker never stores the key. It asks the page that made the request,
+which answers from the tab's `sessionStorage`, so the key still lasts no
+longer than the tab. Publishing the site without a password after it was
+locked replaces the worker with one that removes itself.
+
+> [!note] Without service workers
+> Some private windows, and a site opened from disk, have no service
+> workers. There the page falls back to blob URLs, and a code-split
+> application or a runtime `fetch()` fails as it used to. Tested in Chromium
+> on GitHub Pages; not yet in Safari.
+
 ## What it is not
 
 A shared secret. One password for everyone, no revocation short of
@@ -60,21 +79,13 @@ republishing with a new one, and anybody who has it can pass it on. If you
 need per-reader access with the ability to revoke it, this is not that and
 cannot be made into it.
 
-## Two things it costs
+## What it costs
 
 > [!warning] No incremental publishing
 > A fresh salt and a fresh IV per file means every encrypted file differs from
 > the one already published, so the manifest matches nothing and every publish
 > is a full upload. That is the opposite of what incremental publishing exists
 > for, and it matters most on exactly the large sites it was written for.
-
-> [!warning] No code-split application
-> An as-is build published into a locked site runs from a blob URL, and a
-> module that `import()`s another chunk resolves that import against its own
-> URL, which a blob URL does not have. Single-bundle output works, and so do
-> the stylesheets and images a page names. A build that splits its code, or
-> fetches its own data at runtime, needs the site published without a
-> password. See [[Publishing a built app]].
 
 ## Where the password lives
 

@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-07
+updated: 2026-11-22
 pinned: 1
 tags:
   - guide
@@ -73,14 +73,15 @@ That one decision explains most of the design, and most of the limits.
 - [[Publishing to GitHub Pages]]: tokens, repositories, branches, custom
   domains, GitHub Enterprise, and incremental publishing.
 - [[Locking a site behind a password]]: real encryption rather than a prompt,
-  and the two things it costs you.
+  and what it costs you.
 - [[Publishing a built app]]: HTML published as-is, folders published whole,
   and sending a prototype to the front page of the site.
 
 **Reviewing it**
 
-- [[Reviewing a built site]]: the comment overlay, pins that survive a
-  rebuild, and getting a reviewer's comments back into the vault.
+- [[Reviewing a built site]]: the comment overlay, pins that follow a
+  prototype's sheets and screens, and getting readers' comments back, as a
+  file or as GitHub issues everyone can see.
 - [[Filing comments as issues]]: GitHub, Jira or Asana, and keeping the two
   in step.
 
@@ -101,5 +102,7 @@ That one decision explains most of the design, and most of the limits.
   check both survived.
 - [[A base, embedded]]: a Bases view re-emitted as a table.
 - [[About the as-is demo]]: a hand-written web page published byte for byte.
+- [[About the review demo]]: a prototype in a phone frame, with a sheet and a
+  popup, for trying the review overlay on an app.
 - `Scratch/`: a folder that is **not** published, and the build report says
   so. See [[Choosing what gets published]].

@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-08
+updated: 2026-11-22
 tags:
   - reference
   - meta
@@ -31,6 +31,7 @@ From `.obsidian/plugins/vault-publisher/data.json`:
 | **Publish folders whole** | empty | Nothing here is a built application. |
 | **Password** | empty | A guide nobody can read is not a guide. |
 | **Review overlay** | off | Turn it on to try it. |
+| **How readers' comments reach you** | a file they send you | Sharing as GitHub issues needs a real repository, which a shared vault does not have. |
 | **Tracker** | `none` | |
 | **Repository** | `your-username/your-site-repo` | **A placeholder.** Replace it. |
 | **Branch** | `gh-pages` | The default. |
@@ -67,8 +68,10 @@ Each of these is one toggle away, and each demonstrates a different feature:
    → [[Themes and your own CSS]]
 2. **Publish HTML files as-is** → publishes `Examples/html-as-is/`.
    → [[About the as-is demo]]
-3. **Include a review overlay** → comment on your own build.
-   → [[Reviewing a built site]]
+3. **Include a review overlay** → comment on your own build. With
+   **Publish HTML files as-is** on as well, try it on the prototype in
+   `Examples/review-prototype/`.
+   → [[Reviewing a built site]], [[About the review demo]]
 4. **Require a frontmatter flag** → set it to `publish` and watch the site
    empty out, because no note here carries that key. That is the whitelist
    failing safe, which is the behaviour you want from it.

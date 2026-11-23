@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-07
+updated: 2026-11-22
 tags:
   - reference
   - limits
@@ -60,12 +60,22 @@ password costs a full upload on every publish, the opposite of what
 incremental publishing exists for, and it matters most on exactly the large
 sites it was written for.
 
-## A locked site cannot serve a code-split application
+## A locked site needs service workers for a code-split application
 
-An as-is build in a locked site runs from a blob URL, and a module that
-`import()`s another chunk resolves that import against its own URL, which a
-blob URL does not have. Single-bundle output works.
+A locked site serves its files through a service worker, so a code-split
+application, a `fetch()` for data and pictures a script adds all work behind
+a password. Where a browser has no service workers (some private windows, a
+site opened from disk), the page falls back to blob URLs, and a module that
+`import()`s another chunk fails there. Not yet tested in Safari.
 → [[Locking a site behind a password]]
+
+## Shared review comments need a readable repository
+
+Comments shared through GitHub issues are read by every visitor's browser.
+Without a sign-in service that means a public repository, which rules out a
+password-locked site and most company Enterprise Servers. A sign-in service
+of your own lifts both, at the cost of hosting it.
+→ [[Reviewing a built site]]
 
 ## An application that computes a path at runtime still breaks
 
@@ -90,7 +100,9 @@ These are consequences of the design rather than things to be fixed:
 - **Publishing happens only from a running desktop Obsidian.** No server can
   rebuild the site. → [[Rendering inside Obsidian]]
 - **There is no GitHub Actions workflow**, and will not be.
-- **Filing an issue works only from a preview.** A static host has nothing to
-  file through. → [[Reviewing a built site]]
+- **Filing with a tracker works only from a preview.** A static host has
+  nothing to file through, hence **Issue tracker (preview builds only)**.
+  Readers' comments can still reach you from a published site, as a file or
+  as GitHub issues. → [[Reviewing a built site]]
 - **A password is a shared secret**, not access control. No revocation short of
   republishing.

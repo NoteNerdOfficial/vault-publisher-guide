@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-06
+updated: 2026-11-22
 tags:
   - feature
   - review
@@ -10,6 +10,20 @@ tags:
 
 An open review comment can become an issue in **GitHub**, **Jira** or
 **Asana**, and be kept in step with it afterwards.
+
+> [!important] Preview builds only
+> The settings are in **Issue tracker (preview builds only)**. Filing goes
+> through the plugin's local server, so the **Send** action is in a preview
+> opened in a browser and never on a published page. To file a published
+> site's comments, bring them into the vault first: by a sync when they are
+> shared as GitHub issues, or by a reader's exported file otherwise.
+> → [[Reviewing a built site]]
+
+> [!tip] Not the same as sharing comments as GitHub issues
+> **Leave a review → How readers' comments reach you → GitHub issues** is a
+> different feature: readers of the published site post their own comments
+> as issues, and everyone sees them. This note is about *you* filing
+> comments from a preview, into whichever tracker your team uses.
 
 It is off unless you turn it on, and that is the whole of the design: a
 provider of **none** means no command does anything, no action appears in the
@@ -88,5 +102,5 @@ review comments with the tracker now**.
 
 ## Related
 
-- [[Reviewing a built site]]: where the comments come from, and why filing
-  only works from a preview.
+- [[Reviewing a built site]]: where the comments come from, why filing
+  only works from a preview, and sharing readers' comments as GitHub issues.
