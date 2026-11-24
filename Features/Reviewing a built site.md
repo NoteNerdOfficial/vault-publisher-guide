@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-22
+updated: 2026-11-24
 tags:
   - feature
   - review
@@ -17,7 +17,7 @@ is a second, and how their comments reach you is a third.
 
 ## Using it
 
-1. **Include a review overlay** on, then **Build a preview**.
+1. **Include comment and edit tools** on, then **Build a preview**.
 2. **Open the preview**: this starts the local server.
 3. Switch to comment mode, click a paragraph. It outlines the block and opens a
    draft box with a priority chooser.
@@ -82,18 +82,27 @@ the prototype dims separately does not come back with the sheet.
 
 ## Settings
 
-The settings are in **Leave a review**, which has two halves: what happens in
-your own preview, and what goes out with the published site.
+The settings are in **Comments and editing**, which has three parts: comments
+in your own preview, Edit mode, and comments on the published site. The same
+switch that brings the comment layer, **Include comment and edit tools**,
+brings Edit mode, which shares the notch: see [[Editing a prototype]].
 
-### In your preview
+### Comments in your preview
 
 | Setting | What it does |
 | --- | --- |
 | **Your name** | Shown against the comments you leave in the preview. Optional, and never written into the published site. |
 | **Review folder** | Where comments are saved as you leave them, and where a reader's exported file goes. `_vault-publisher/review` by default. |
+| **Reopen sheets and popups automatically** | Opening a comment whose sheet is closed repeats the taps that led there, instead of offering **Reopen**. Off by default, since the taps run the prototype's own code. Applies to the published site too. |
 | **Import review comments** | Turns the review folder into a note in your vault, with a task per comment. |
 
-### On the published site
+### Edit mode
+
+| Setting | What it does |
+| --- | --- |
+| **Open code in** | The editor Edit mode's Code section opens a file in. → [[Editing a prototype]] |
+
+### Comments on the published site
 
 | Setting | What it does |
 | --- | --- |
@@ -251,5 +260,6 @@ See [[Filing comments as issues]].
 ## Related
 
 - [[About the prototype demo]]: a prototype to try all of this on.
+- [[Editing a prototype]]: changing the prototype itself from the preview.
 - [[Filing comments as issues]]: GitHub, Jira, Asana.
 - [[Commands and automation]]: the review commands.

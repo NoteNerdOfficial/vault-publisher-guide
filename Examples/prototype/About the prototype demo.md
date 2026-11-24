@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-23
+updated: 2026-11-24
 tags:
   - example
   - review
@@ -15,7 +15,7 @@ delivery options that slide in, and a popup that is built when asked for and
 thrown away when answered.
 
 > [!important] One switch first
-> **Settings → Vault Publisher → Include a review overlay**, to try the
+> **Settings → Vault Publisher → Include comment and edit tools**, to try the
 > review steps below. Then **Build a preview**, **Open the preview**, and go
 > to [[See it working]]. **Publish HTML files as-is**, which the prototype
 > also needs, is already on in this vault.
@@ -74,15 +74,23 @@ It is a button, not automatic, because a tap runs the prototype's own code.
 Here that only rebuilds the popup, but in another prototype it might change
 something.
 
+## Editing it
+
+Use **Open full page** on the embed, then press **E**. Try selecting a row
+and pressing **⇧A** for auto layout, or **More → Button** to add a button in
+the prototype's own style. Every change is written into `basket.html`, and
+**Undo** takes it back. → [[Editing a prototype]]
+
 ## On the published site
 
-With **Leave a review → Include in the published site** on, the overlay goes
+With **Comments and editing → Include in the published site** on, the overlay goes
 out with the site, and readers can leave comments on the prototype too if
 **Let readers write comments** is on. → [[Reviewing a built site]]
 
 ## Related
 
 - [[See it working]]: where the prototype is embedded.
+- [[Editing a prototype]]: changing it from the preview.
 - [[Reviewing a built site]]
 - [[Publishing a built app]]: embeds, and publishing whole applications.
 - [[About the as-is demo]]: which files travel with a page.

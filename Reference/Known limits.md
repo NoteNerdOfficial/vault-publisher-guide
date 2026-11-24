@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-22
+updated: 2026-11-24
 tags:
   - reference
   - limits
@@ -76,6 +76,15 @@ Without a sign-in service that means a public repository, which rules out a
 password-locked site and most company Enterprise Servers. A sign-in service
 of your own lifts both, at the cost of hosting it.
 → [[Reviewing a built site]]
+
+## Edit mode is preview-only and has gaps
+
+Edit mode writes through the plugin's local server, so it exists only in a
+preview and only on HTML published as-is. Gap and padding fields do not offer
+size variables, **Put back** keeps a detached layer's fixed width, the
+eyedropper needs a Chromium-based browser, and a layer the page's own script
+made cannot be moved or deleted, since it is not in the file.
+→ [[Editing a prototype]]
 
 ## An application that computes a path at runtime still breaks
 

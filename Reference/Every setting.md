@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-22
+updated: 2026-11-24
 tags:
   - reference
   - settings
@@ -17,7 +17,7 @@ Not settings, but they sit at the top because they are what you came for.
 | | |
 | --- | --- |
 | **Build a preview** | Builds into `_site-preview/`. |
-| **Include a review overlay** | Off. Puts the overlay on the preview. → [[Reviewing a built site]] |
+| **Include comment and edit tools** | Off. Puts the comment layer and Edit mode on the preview. → [[Reviewing a built site]], [[Editing a prototype]] |
 | **Open the preview** / **Stop serving** | The local server, started on demand. |
 | **Publish to GitHub** | → [[Publishing to GitHub Pages]] |
 
@@ -81,19 +81,27 @@ Not settings, but they sit at the top because they are what you came for.
 
 → [[Locking a site behind a password]]
 
-## Leave a review
+## Comments and editing
 
-Two halves, under their own headings.
+Three parts, under their own headings.
 
-**In your preview**
+**Comments in your preview**
 
 | Setting | Default | |
 | --- | --- | --- |
 | **Your name** | empty | Shown against your comments in the preview. Never written into the published site. |
 | **Review folder** | `_vault-publisher/review` | |
+| **Reopen sheets and popups automatically** | off | Repeats the taps that opened a comment's sheet. Applies to the published site too. |
 | **Import review comments** | — | |
 
-**On the published site**
+**Edit mode**
+
+| Setting | Default | |
+| --- | --- | --- |
+| **Open code in** | VS Code | Or Cursor, Windsurf, Zed, VS Code Insiders, Obsidian, **Custom…** or **Don't show a link**. → [[Editing a prototype]] |
+| **Custom link** | empty | With **Custom…**: a link with `{path}`, `{file}`, `{vault}`, `{line}` and `{column}`. |
+
+**Comments on the published site**
 
 | Setting | Default | |
 | --- | --- | --- |

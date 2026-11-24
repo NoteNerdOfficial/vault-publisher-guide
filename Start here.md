@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-23
+updated: 2026-11-24
 pinned: 1
 tags:
   - guide
@@ -84,6 +84,12 @@ That one decision explains most of the design, and most of the limits.
   file or as GitHub issues everyone can see.
 - [[Filing comments as issues]]: GitHub, Jira or Asana, and keeping the two
   in step.
+
+**Editing it**
+
+- [[Editing a prototype]]: change a prototype from its preview with
+  Figma-style tools, a Design panel and keyboard shortcuts, written straight
+  into its file.
 
 **Driving it**
 

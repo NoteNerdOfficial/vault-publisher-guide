@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-22
+updated: 2026-11-24
 tags:
   - feature
   - review
@@ -20,7 +20,7 @@ An open review comment can become an issue in **GitHub**, **Jira** or
 > → [[Reviewing a built site]]
 
 > [!tip] Not the same as sharing comments as GitHub issues
-> **Leave a review → How readers' comments reach you → GitHub issues** is a
+> **Comments and editing → How readers' comments reach you → GitHub issues** is a
 > different feature: readers of the published site post their own comments
 > as issues, and everyone sees them. This note is about *you* filing
 > comments from a preview, into whichever tracker your team uses.

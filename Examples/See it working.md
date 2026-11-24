@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-23
+updated: 2026-11-24
 pinned: 2
 tags:
   - example
@@ -31,7 +31,7 @@ tall.
 > the prototype is not published, so the embed stays the box Obsidian drew.
 
 > [!tip] Leave a comment on it
-> With **Include a review overlay** on as well, the note gets one review
+> With **Include comment and edit tools** on as well, the note gets one review
 > toolbar, and pins land on the prototype's own buttons and rows.
 > [[About the prototype demo]] lists what to try.
 

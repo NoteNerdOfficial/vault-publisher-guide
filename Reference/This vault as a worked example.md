@@ -1,5 +1,5 @@
 ---
-updated: 2026-11-23
+updated: 2026-11-24
 tags:
   - reference
   - meta
@@ -23,14 +23,14 @@ From `.obsidian/plugins/vault-publisher/data.json`:
 | **Require a frontmatter flag** | off | Everything here is meant to be public, so the whitelist would be ceremony. |
 | **Homepage** | `Start here.md` | Set explicitly rather than relying on the `README.md` → `index.md` → `Home.md` fallback. |
 | **Date property** | `updated` | The default. Every note sets it. |
-| **Start here property** | `pinned` | The default. Six notes set it, numbered `1`–`6`, so the panel reads in the order [[Start here]] recommends rather than alphabetically. |
+| **Start here property** | `pinned` | The default. Seven notes set it, numbered `1`–`7`, so the panel reads in the order [[Start here]] recommends rather than alphabetically. |
 | **Style** | `Studio` | The default, and it is a documentation theme. |
 | **Opens in** | the visitor's system | The default. A guide should look like the machine reading it. |
 | **Custom stylesheet** | empty | `Examples/site-tokens.css` is there to try. |
 | **Publish HTML files as-is** | **on** | Not the default. On so the prototype in [[See it working]] and the as-is example work as soon as you build. Turn it off to see them left out. |
 | **Publish folders whole** | empty | Nothing here is a built application. |
 | **Password** | empty | A guide nobody can read is not a guide. |
-| **Review overlay** | off | Turn it on to try it. |
+| **Comment and edit tools** | off | Turn it on to try comments and Edit mode. |
 | **How readers' comments reach you** | a file they send you | Sharing as GitHub issues needs a real repository, which a shared vault does not have. |
 | **Tracker** | `none` | |
 | **Repository** | `your-username/your-site-repo` | **A placeholder.** Replace it. |
@@ -51,7 +51,8 @@ A preview build of this vault should give you:
   `Examples` in it, and **no `Scratch`**.
 - **A Start here list** above that tree, reading `Start here`, `See it working`,
   `Install and first build`, `Choosing what gets published`, `Publishing to
-  GitHub Pages`, `The note header`: the numbers, not the alphabet.
+  GitHub Pages`, `The note header`, `Editing a prototype`: the numbers, not
+  the alphabet.
 - **A Mermaid diagram** on [[Rendering inside Obsidian]], if your vault has
   allowed diagrams.
 - **A build report** naming `Scratch/Not published.md` among what it left out.
@@ -66,9 +67,10 @@ Each of these is one toggle away, and each demonstrates a different feature:
 
 1. **Custom stylesheet** → `Examples/site-tokens.css`.
    → [[Themes and your own CSS]]
-2. **Include a review overlay** → comment on your own build, including on
-   the prototype in [[See it working]].
-   → [[Reviewing a built site]], [[About the prototype demo]]
+2. **Include comment and edit tools** → comment on your own build, including
+   on the prototype in [[See it working]], and edit that prototype in Edit
+   mode.
+   → [[Reviewing a built site]], [[About the prototype demo]], [[Editing a prototype]]
 3. **Require a frontmatter flag** → set it to `publish` and watch the site
    empty out, because no note here carries that key. That is the whitelist
    failing safe, which is the behaviour you want from it.
