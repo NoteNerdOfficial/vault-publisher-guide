@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-osp-source>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Editing a prototype &middot; Vault Publisher — Guide</title>
+
+<meta property="og:title" content="Editing a prototype">
+<meta property="og:type" content="article">
+
+<link rel="stylesheet" href="../assets/obsidian.css">
+<link rel="stylesheet" href="../assets/site.css">
+
+<script>try{var r=document.documentElement,t=localStorage.getItem("osp-theme");if(t)r.setAttribute("data-theme",t);var w=localStorage.getItem("osp-width");if(w)r.setAttribute("data-osp-width",w);if(localStorage.getItem("osp-view")==="markdown"&&r.hasAttribute("data-osp-source"))r.setAttribute("data-osp-view","markdown")}catch(e){}</script>
+</head>
+<body>
+<a class="osp-skip-link" href="#osp-main">Skip to content</a>
+<div class="osp-shell"><header class="osp-bar"><a class="osp-brand" href="../index.html"><span class="osp-mark" aria-hidden="true">V</span><span class="osp-brand-name">Vault Publisher — Guide</span></a><div class="osp-search osp-bar-search" hidden data-osp-search><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" placeholder="Search 22 notes…" aria-label="Search this site" autocomplete="off" spellcheck="false" data-osp-search-input><button class="osp-search-clear" type="button" data-osp-search-clear hidden aria-label="Clear search" title="Clear search"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button><kbd>/</kbd></div><div class="osp-bar-actions"><button class="osp-switch" type="button" role="switch" aria-checked="false" data-osp-theme-toggle aria-label="Dark mode"><span class="osp-switch-track"><span class="osp-switch-icon osp-switch-sun"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg></span><span class="osp-switch-icon osp-switch-moon"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg></span><span class="osp-switch-thumb"></span></span></button></div><button class="osp-btn osp-btn-sq osp-panel-toggle" type="button" data-osp-panel-toggle hidden aria-expanded="false" aria-controls="osp-panel" aria-label="Menu" title="Menu"><svg class="osp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></header><div class="osp-scrim" data-osp-scrim hidden></div><aside class="osp-panel" id="osp-panel" aria-label="Browse the vault"><div class="osp-panel-head"><div class="osp-search osp-panel-search" hidden data-osp-search><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" placeholder="Search or jump to…" aria-label="Search this site" autocomplete="off" spellcheck="false" data-osp-search-input><button class="osp-search-clear" type="button" data-osp-search-clear hidden aria-label="Clear search" title="Clear search"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button><kbd>/</kbd></div><div class="osp-panel-theme"><button class="osp-btn osp-btn-sq osp-theme-btn" type="button" role="switch" aria-checked="false" data-osp-theme-toggle aria-label="Dark mode" title="Dark mode"><span class="osp-theme-glyph osp-theme-sun"><svg class="osp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg></span><span class="osp-theme-glyph osp-theme-moon"><svg class="osp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg></span></button></div><button class="osp-btn osp-btn-sq osp-panel-close" type="button" data-osp-panel-close aria-label="Close" title="Close"><svg class="osp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div class="osp-pins"><h2 class="osp-group-title osp-pins-title">Start here<span class="osp-count">7</span></h2><div class="osp-pins-scroll osp-scroll"><ul class="osp-pin-list"><li><a class="osp-row" href="../index.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 17v4"/><path d="M9 3h6l-1 6 3 3v2H7v-2l3-3z"/></svg><span class="osp-label">Start here</span></a></li><li><a class="osp-row" href="../Examples/See%20it%20working.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 17v4"/><path d="M9 3h6l-1 6 3 3v2H7v-2l3-3z"/></svg><span class="osp-label">See it working</span></a></li><li><a class="osp-row" href="../Getting%20started/Install%20and%20first%20build.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 17v4"/><path d="M9 3h6l-1 6 3 3v2H7v-2l3-3z"/></svg><span class="osp-label">Install and first build</span></a></li><li><a class="osp-row" href="../Getting%20started/Choosing%20what%20gets%20published.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 17v4"/><path d="M9 3h6l-1 6 3 3v2H7v-2l3-3z"/></svg><span class="osp-label">Choosing what gets published</span></a></li><li><a class="osp-row" href="../Features/Publishing%20to%20GitHub%20Pages.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 17v4"/><path d="M9 3h6l-1 6 3 3v2H7v-2l3-3z"/></svg><span class="osp-label">Publishing to GitHub Pages</span></a></li></ul><details class="osp-pins-rest"><summary class="osp-row osp-pins-toggle"><svg class="osp-icon-sm osp-pins-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg><span class="osp-label osp-pins-more">Show more</span><span class="osp-label osp-pins-less">Show less</span><span class="osp-num osp-pins-count">2</span></summary><ul class="osp-pin-list"><li><a class="osp-row" href="../Features/The%20note%20header.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 17v4"/><path d="M9 3h6l-1 6 3 3v2H7v-2l3-3z"/></svg><span class="osp-label">The note header</span></a></li><li><a class="osp-row osp-current" href="../Features/Editing%20a%20prototype.html" aria-current="page"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 17v4"/><path d="M9 3h6l-1 6 3 3v2H7v-2l3-3z"/></svg><span class="osp-label">Editing a prototype</span></a></li></ul></details></div></div><div class="osp-panel-body osp-scroll"><div class="osp-group-title osp-browse-title"><h2 class="osp-browse-name">Browse</h2><span class="osp-tree-tools" data-osp-tree-tools hidden><button type="button" class="osp-tree-tool" data-osp-collapse-all aria-label="Collapse all" title="Collapse all"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 20 5-5 5 5"/><path d="m7 4 5 5 5-5"/></svg></button><button type="button" class="osp-tree-tool" data-osp-reveal aria-pressed="true" aria-label="Auto-reveal current file" title="Auto-reveal current file"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h3M19 12h3M12 2v3M12 19v3"/><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/></svg></button></span><span class="osp-count">22</span></div><ul class="osp-tree"><li class="osp-folder"><details data-osp-folder="Examples"><summary class="osp-row"><svg class="osp-icon-sm osp-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7.5A1.5 1.5 0 0 1 4.5 6h3.8a1.5 1.5 0 0 1 1.2.6l.9 1.2h8.1A1.5 1.5 0 0 1 20 9.3v8.2A1.5 1.5 0 0 1 18.5 19h-14A1.5 1.5 0 0 1 3 17.5z"/></svg><span class="osp-label">Examples</span><span class="osp-num">5</span></summary><ul class=""><li class="osp-folder"><details data-osp-folder="Examples/html-as-is"><summary class="osp-row"><svg class="osp-icon-sm osp-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7.5A1.5 1.5 0 0 1 4.5 6h3.8a1.5 1.5 0 0 1 1.2.6l.9 1.2h8.1A1.5 1.5 0 0 1 20 9.3v8.2A1.5 1.5 0 0 1 18.5 19h-14A1.5 1.5 0 0 1 3 17.5z"/></svg><span class="osp-label">html-as-is</span><span class="osp-num">2</span></summary><ul class="osp-nest"><li class="osp-file"><a class="osp-row" href="../Examples/html-as-is/index.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 17-5-5 5-5"/><path d="m15 7 5 5-5 5"/></svg><span class="osp-label">A page published as-is</span></a></li><li class="osp-file"><a class="osp-row" href="../Examples/html-as-is/About%20the%20as-is%20demo.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">About the as-is demo</span></a></li></ul></details></li><li class="osp-folder"><details data-osp-folder="Examples/prototype"><summary class="osp-row"><svg class="osp-icon-sm osp-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7.5A1.5 1.5 0 0 1 4.5 6h3.8a1.5 1.5 0 0 1 1.2.6l.9 1.2h8.1A1.5 1.5 0 0 1 20 9.3v8.2A1.5 1.5 0 0 1 18.5 19h-14A1.5 1.5 0 0 1 3 17.5z"/></svg><span class="osp-label">prototype</span><span class="osp-num">2</span></summary><ul class="osp-nest"><li class="osp-file"><a class="osp-row" href="../Examples/prototype/About%20the%20prototype%20demo.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">About the prototype demo</span></a></li><li class="osp-file"><a class="osp-row" href="../Examples/prototype/basket.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 17-5-5 5-5"/><path d="m15 7 5 5-5 5"/></svg><span class="osp-label">Basket prototype</span></a></li></ul></details></li><li class="osp-file"><a class="osp-row" href="../Examples/See%20it%20working.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">See it working</span></a></li></ul></details></li><li class="osp-folder"><details data-osp-folder="Features" open><summary class="osp-row"><svg class="osp-icon-sm osp-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7.5A1.5 1.5 0 0 1 4.5 6h3.8a1.5 1.5 0 0 1 1.2.6l.9 1.2h8.1A1.5 1.5 0 0 1 20 9.3v8.2A1.5 1.5 0 0 1 18.5 19h-14A1.5 1.5 0 0 1 3 17.5z"/></svg><span class="osp-label">Features</span><span class="osp-num">13</span></summary><ul class=""><li class="osp-file"><a class="osp-row" href="../Features/Commands%20and%20automation.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Commands and automation</span></a></li><li class="osp-file"><a class="osp-row" href="../Features/Dataview%2C%20Bases%20and%20Mermaid.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Dataview, Bases and Mermaid</span></a></li><li class="osp-file osp-current-file"><a class="osp-row osp-current" href="../Features/Editing%20a%20prototype.html" aria-current="page"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Editing a prototype</span></a></li><li class="osp-file"><a class="osp-row" href="../Features/Filing%20comments%20as%20issues.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Filing comments as issues</span></a></li><li class="osp-file"><a class="osp-row" href="../Features/Linking%20back%20to%20the%20source.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Linking back to the source</span></a></li><li class="osp-file"><a class="osp-row" href="../Features/Locking%20a%20site%20behind%20a%20password.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Locking a site behind a password</span></a></li><li class="osp-file"><a class="osp-row" href="../Features/Pages%20the%20build%20writes%20for%20you.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Pages the build writes for you</span></a></li><li class="osp-file"><a class="osp-row" href="../Features/Publishing%20a%20built%20app.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Publishing a built app</span></a></li><li class="osp-file"><a class="osp-row" href="../Features/Publishing%20to%20GitHub%20Pages.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Publishing to GitHub Pages</span></a></li><li class="osp-file"><a class="osp-row" href="../Features/Rendering%20inside%20Obsidian.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Rendering inside Obsidian</span></a></li><li class="osp-file"><a class="osp-row" href="../Features/Reviewing%20a%20built%20site.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Reviewing a built site</span></a></li><li class="osp-file"><a class="osp-row" href="../Features/The%20note%20header.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">The note header</span></a></li><li class="osp-file"><a class="osp-row" href="../Features/Themes%20and%20your%20own%20CSS.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Themes and your own CSS</span></a></li></ul></details></li><li class="osp-folder"><details data-osp-folder="Getting started"><summary class="osp-row"><svg class="osp-icon-sm osp-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7.5A1.5 1.5 0 0 1 4.5 6h3.8a1.5 1.5 0 0 1 1.2.6l.9 1.2h8.1A1.5 1.5 0 0 1 20 9.3v8.2A1.5 1.5 0 0 1 18.5 19h-14A1.5 1.5 0 0 1 3 17.5z"/></svg><span class="osp-label">Getting started</span><span class="osp-num">2</span></summary><ul class=""><li class="osp-file"><a class="osp-row" href="../Getting%20started/Choosing%20what%20gets%20published.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Choosing what gets published</span></a></li><li class="osp-file"><a class="osp-row" href="../Getting%20started/Install%20and%20first%20build.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Install and first build</span></a></li></ul></details></li><li class="osp-folder"><details data-osp-folder="Reference"><summary class="osp-row"><svg class="osp-icon-sm osp-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7.5A1.5 1.5 0 0 1 4.5 6h3.8a1.5 1.5 0 0 1 1.2.6l.9 1.2h8.1A1.5 1.5 0 0 1 20 9.3v8.2A1.5 1.5 0 0 1 18.5 19h-14A1.5 1.5 0 0 1 3 17.5z"/></svg><span class="osp-label">Reference</span><span class="osp-num">3</span></summary><ul class=""><li class="osp-file"><a class="osp-row" href="../Reference/Every%20setting.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Every setting</span></a></li><li class="osp-file"><a class="osp-row" href="../Reference/Known%20limits.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Known limits</span></a></li><li class="osp-file"><a class="osp-row" href="../Reference/This%20vault%20as%20a%20worked%20example.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">This vault as a worked example</span></a></li></ul></details></li><li class="osp-file"><a class="osp-row" href="../index.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14.5 3H7a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 7 21h10a1.5 1.5 0 0 0 1.5-1.5V7.5z"/></svg><span class="osp-label">Start here</span></a></li></ul></div></aside><div class="osp-search-scrim" data-osp-search-scrim aria-hidden="true"></div><div class="osp-jump" data-osp-jump hidden><div class="osp-jump-recent" data-osp-jump-recent><h2 class="osp-group-title">Recently updated<span class="osp-num">22</span></h2><div class="osp-bucket"><span class="osp-group-title">Today</span><span class="osp-num">9</span></div><ul class="osp-tree"><li><details class="osp-batch" data-osp-batch="today-0"><summary class="osp-row"><svg class="osp-icon-sm osp-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5z"/><path d="m3 13 9 5 9-5"/></svg><span class="osp-label">9 notes changed together</span></summary><ul class="osp-nest"><li><a class="osp-row" href="../Examples/prototype/About%20the%20prototype%20demo.html"><span class="osp-label">About the prototype demo</span><span class="osp-trail">Examples/prototype</span></a></li><li><a class="osp-row" href="../Examples/See%20it%20working.html"><span class="osp-label">See it working</span><span class="osp-trail">Examples</span></a></li><li><a class="osp-row osp-current" href="../Features/Editing%20a%20prototype.html" aria-current="page"><span class="osp-label">Editing a prototype</span><span class="osp-trail">Features</span></a></li><li><a class="osp-row" href="../Features/Filing%20comments%20as%20issues.html"><span class="osp-label">Filing comments as issues</span><span class="osp-trail">Features</span></a></li><li><a class="osp-row" href="../Features/Reviewing%20a%20built%20site.html"><span class="osp-label">Reviewing a built site</span><span class="osp-trail">Features</span></a></li><li><a class="osp-row" href="../Reference/Every%20setting.html"><span class="osp-label">Every setting</span><span class="osp-trail">Reference</span></a></li><li><a class="osp-row" href="../Reference/Known%20limits.html"><span class="osp-label">Known limits</span><span class="osp-trail">Reference</span></a></li><li><a class="osp-row" href="../Reference/This%20vault%20as%20a%20worked%20example.html"><span class="osp-label">This vault as a worked example</span><span class="osp-trail">Reference</span></a></li><li><a class="osp-row" href="../index.html"><span class="osp-label">Start here</span><span class="osp-trail">/</span></a></li></ul></details></li></ul><div class="osp-bucket"><span class="osp-group-title">Earlier this week</span><span class="osp-num">4</span></div><ul class="osp-tree"><li><a class="osp-row" href="../Examples/html-as-is/About%20the%20as-is%20demo.html"><span class="osp-label">About the as-is demo</span><span class="osp-trail">yesterday</span></a></li><li><a class="osp-row" href="../Features/Dataview%2C%20Bases%20and%20Mermaid.html"><span class="osp-label">Dataview, Bases and Mermaid</span><span class="osp-trail">yesterday</span></a></li><li><a class="osp-row" href="../Features/Publishing%20a%20built%20app.html"><span class="osp-label">Publishing a built app</span><span class="osp-trail">yesterday</span></a></li></ul><a class="osp-row osp-row-more" href="../browse.html#recent"><span class="osp-label">Show all 22 updated notes</span><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><div class="osp-jump-results" data-osp-jump-results hidden></div><p class="osp-jump-hint"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>enter</kbd> open</span><span><kbd>esc</kbd> close</span></p><div class="osp-tag-index" data-osp-tag-index hidden><a class="osp-row" href="../tags/feature.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">feature</span><span class="osp-num">13</span></a><a class="osp-row" href="../tags/prototype.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">prototype</span><span class="osp-num">4</span></a><a class="osp-row" href="../tags/example.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">example</span><span class="osp-num">3</span></a><a class="osp-row" href="../tags/guide.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">guide</span><span class="osp-num">3</span></a><a class="osp-row" href="../tags/reference.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">reference</span><span class="osp-num">3</span></a><a class="osp-row" href="../tags/review.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">review</span><span class="osp-num">3</span></a><a class="osp-row" href="../tags/github.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">github</span><span class="osp-num">2</span></a><a class="osp-row" href="../tags/html.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">html</span><span class="osp-num">2</span></a><a class="osp-row" href="../tags/rendering.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">rendering</span><span class="osp-num">2</span></a><a class="osp-row" href="../tags/architecture.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">architecture</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/automation.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">automation</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/bases.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">bases</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/commands.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">commands</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/css.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">css</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/dataview.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">dataview</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/edit.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">edit</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/encryption.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">encryption</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/evergreen.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">evergreen</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/frontmatter.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">frontmatter</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/limits.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">limits</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/mermaid.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">mermaid</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/meta.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">meta</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/navigation.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">navigation</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/overlay.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">overlay</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/privacy.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">privacy</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/publishing.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">publishing</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/safety.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">safety</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/selection.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">selection</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/settings.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">settings</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/setup.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">setup</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/site.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">site</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/start.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">start</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/theme.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">theme</span><span class="osp-num">1</span></a><a class="osp-row" href="../tags/tracker.html"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 8 21M16 3l-2 18M3.5 9h17M2.5 15h17"/></svg><span class="osp-label">tracker</span><span class="osp-num">1</span></a></div></div><main class="osp-main" id="osp-main"><nav class="osp-crumb" data-osp-crumb aria-label="Breadcrumb"><div class="osp-crumb-nav" role="group" aria-label="History"><button type="button" class="osp-crumb-step" data-osp-back disabled aria-label="Go back" title="Go back"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" class="osp-crumb-step" data-osp-forward disabled aria-label="Go forward" title="Go forward"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div><ol class="osp-crumb-trail"><li><a href="../index.html">Vault Publisher — Guide</a></li><li><svg class="osp-icon-sm osp-crumb-sep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><a href="../browse.html#folder-features">Features</a></li><li><svg class="osp-icon-sm osp-crumb-sep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><span aria-current="page">Editing a prototype</span></li></ol><div class="osp-crumb-tools"><div class="osp-seg" role="radiogroup" aria-label="View mode" data-osp-views hidden><button type="button" class="osp-seg-btn" role="radio" data-osp-view-mode="read" aria-checked="true" tabindex="0" title="Read view" aria-label="Read view"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H10a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H5.5A1.5 1.5 0 0 1 4 15.5z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H14a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h4.5a1.5 1.5 0 0 0 1.5-1.5z"/></svg><span>Read</span></button><button type="button" class="osp-seg-btn" role="radio" data-osp-view-mode="markdown" aria-checked="false" tabindex="-1" title="Markdown view" aria-label="Markdown view"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 17-5-5 5-5"/><path d="m15 7 5 5-5 5"/></svg><span>Markdown</span></button></div><div class="osp-seg osp-seg-icon" role="radiogroup" aria-label="Content width" data-osp-widths hidden><button type="button" class="osp-seg-btn" role="radio" data-osp-width-mode="reading" aria-checked="true" tabindex="0" title="Reading width" aria-label="Reading width"><svg class="osp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16"/><path d="M2 12h6.5"/><path d="m4.5 8 4 4-4 4"/><path d="M22 12h-6.5"/><path d="m19.5 8-4 4 4 4"/></svg></button><button type="button" class="osp-seg-btn" role="radio" data-osp-width-mode="wide" aria-checked="false" tabindex="-1" title="Wide" aria-label="Wide"><svg class="osp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16"/><path d="M8.5 12H2"/><path d="m6 8-4 4 4 4"/><path d="M15.5 12H22"/><path d="m18 8 4 4-4 4"/></svg></button><button type="button" class="osp-seg-btn" role="radio" data-osp-width-mode="full" aria-checked="false" tabindex="-1" title="Full width" aria-label="Full width"><svg class="osp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="m14 10 7-7"/><path d="M9 21H3v-6"/><path d="m10 14-7 7"/></svg></button></div></div></nav><details class="osp-inpage" data-osp-inpage><summary class="osp-inpage-head"><span class="osp-inpage-label">On this page</span><span class="osp-inpage-now" data-osp-inpage-now>What it needs</span><svg class="osp-icon-sm osp-inpage-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><div class="osp-inpage-body osp-scroll"><ul class="osp-outline"><li class="osp-lvl2"><a href="#what-it-needs" data-osp-spy="what-it-needs">What it needs</a></li><li class="osp-lvl2"><a href="#selecting" data-osp-spy="selecting">Selecting</a></li><li class="osp-lvl2"><a href="#the-bar" data-osp-spy="the-bar">The bar</a></li><li class="osp-lvl2"><a href="#adding-layers" data-osp-spy="adding-layers">Adding layers</a></li><li class="osp-lvl2"><a href="#the-panel" data-osp-spy="the-panel">The panel</a></li><li class="osp-lvl3"><a href="#design" data-osp-spy="design">Design</a></li><li class="osp-lvl3"><a href="#layers" data-osp-spy="layers">Layers</a></li><li class="osp-lvl2"><a href="#several-layers-at-once" data-osp-spy="several-layers-at-once">Several layers at once</a></li><li class="osp-lvl2"><a href="#where-a-change-is-written" data-osp-spy="where-a-change-is-written">Where a change is written</a></li><li class="osp-lvl2"><a href="#going-to-the-code" data-osp-spy="going-to-the-code">Going to the code</a></li><li class="osp-lvl2"><a href="#undo-history-and-backups" data-osp-spy="undo-history-and-backups">Undo, History and backups</a></li><li class="osp-lvl2"><a href="#keyboard-shortcuts" data-osp-spy="keyboard-shortcuts">Keyboard shortcuts</a></li><li class="osp-lvl2"><a href="#settings" data-osp-spy="settings">Settings</a></li><li class="osp-lvl2"><a href="#what-it-does-not-do-yet" data-osp-spy="what-it-does-not-do-yet">What it does not do yet</a></li><li class="osp-lvl2"><a href="#related" data-osp-spy="related">Related</a></li></ul></div></details><div class="osp-doc"><p class="osp-stats osp-stats-top"><span class="osp-num">9 min</span><span aria-hidden="true">·</span><span class="osp-num">2064 words</span><span aria-hidden="true">·</span><span class="osp-num">13 sections</span></p><article class="osp-article markdown-rendered"><h1 class="osp-title">Editing a prototype</h1><div class="osp-meta"><span class="osp-meta-item">Updated <span class="osp-meta-value">24 Nov 2026</span></span><span class="osp-meta-item">Links <span class="osp-meta-value">7 in · 6 out</span></span><span class="osp-tagcloud"><a class="osp-tag" href="../tags/feature.html">#feature</a><a class="osp-tag" href="../tags/edit.html">#edit</a><a class="osp-tag" href="../tags/prototype.html">#prototype</a></span></div>
+
+
+<p dir="auto">An HTML page published as-is can be edited in its preview, with tools and a
+panel that work like Figma's. What you change is written straight into the
+page's file in your vault, so there is no design file to keep in step with
+the code: the prototype <em>is</em> the design.</p>
+<p dir="auto"><span class="internal-embed media-embed image-embed is-loaded" src="edit-mode.png" alt="edit-mode.png"><img alt="edit-mode.png" src="../assets/files/Features/images/edit-mode.png"></span></p>
+<p dir="auto"><em>The Team card selected, with the Rectangle tool out. The blue line above
+<strong>Start a trial</strong> shows where the rectangle would go, and the Design panel on
+the right shows the card's auto layout, sizing, appearance, fill and stroke.</em></p>
+<h2 data-heading="What it needs" dir="auto" id="what-it-needs" data-osp-anchored=""><a class="osp-heading-self" href="#what-it-needs" data-osp-heading-self="" draggable="false">What it <span class="osp-heading-tail">needs<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
+<ul>
+<li dir="auto"><strong>Publish HTML files as-is</strong> on, in <strong>What to publish</strong>.</li>
+<li dir="auto"><strong>Include comment and edit tools</strong> on, next to <strong>Build a preview</strong>.</li>
+<li dir="auto">A preview opened from the plugin: <strong>Build a preview</strong>, then <strong>Open the
+preview</strong>. The plugin's local server is what writes the file, so Edit mode
+exists only there. A published site never carries it, even with comments
+switched on for readers.</li>
+</ul>
+<p dir="auto">Edit mode works on the page that is the prototype itself, not on a note that
+embeds one. In a note, use <strong>Open full page</strong> on the embed to get there.</p>
+<div class="callout" data-callout="example" data-callout-fold="" data-callout-metadata=""><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-list"><path d="M3 5h.01"></path><path d="M3 12h.01"></path><path d="M3 19h.01"></path><path d="M8 5h13"></path><path d="M8 12h13"></path><path d="M8 19h13"></path></svg></div><div class="callout-title-inner">Try it on this vault</div></div><div class="callout-content">
+<p dir="auto">Build a preview of this vault, open <a class="internal-link" href="../Examples/See%20it%20working.html">See it working</a>, and use <strong>Open full
+page</strong> on the basket prototype. Press <strong>E</strong>, or click the pencil on the
+notch at the bottom. Every change you make is written into
+<code>Examples/prototype/basket.html</code>, and <strong>Undo</strong> takes it back out.</p>
+</div></div>
+<h2 data-heading="Selecting" dir="auto" id="selecting" data-osp-anchored=""><a class="osp-heading-self" href="#selecting" data-osp-heading-self="" draggable="false"><span class="osp-heading-tail">Selecting<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
+<ul>
+<li dir="auto"><strong>Click</strong> a layer to select it. The first click picks the outermost layer
+that is not the size of the whole page, the way Figma picks a frame.</li>
+<li dir="auto"><strong>Double-click</strong> to go one level inside it, and <strong>Esc</strong> to go back up. On a
+text layer that is already selected, double-click edits its words.</li>
+<li dir="auto"><strong>Alt-click</strong> selects the deepest layer under the pointer directly.</li>
+<li dir="auto"><strong>Shift-click</strong> adds a layer to the selection, or takes it away.</li>
+<li dir="auto"><strong>Right-click</strong> opens a menu with everything the bar and the shortcuts do.</li>
+</ul>
+<p dir="auto">The bar under the page shows the selected layer's path, such as
+<code>main.plans › div.plan</code>. Click a step in the path to select it.</p>
+<h2 data-heading="The bar" dir="auto" id="the-bar" data-osp-anchored=""><a class="osp-heading-self" href="#the-bar" data-osp-heading-self="" draggable="false">The <span class="osp-heading-tail">bar<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
+<p dir="auto"><strong>Edit text</strong>, <strong>Duplicate</strong>, <strong>Hide</strong> and <strong>Delete</strong>, then the insert tools,
+then <strong>Undo</strong>, <strong>Redo</strong> and <strong>History</strong>.</p>
+<ul>
+<li dir="auto"><strong>Drag</strong> a layer to move it. In a row or column it reorders, with a blue
+line showing where it will land. Into an empty frame it goes inside. On a
+grid it can drop into an empty cell.</li>
+<li dir="auto"><strong>Alt-drag</strong> leaves the original where it is and drops a copy.</li>
+<li dir="auto"><strong>Drag a handle</strong> on the selection's right or bottom edge, or its corner,
+to resize it.</li>
+</ul>
+<h2 data-heading="Adding layers" dir="auto" id="adding-layers" data-osp-anchored=""><a class="osp-heading-self" href="#adding-layers" data-osp-heading-self="" draggable="false">Adding <span class="osp-heading-tail">layers<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
+<div class="osp-table-wrap osp-scroller"><table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Key</th>
+<th>What it adds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Frame</strong></td>
+<td>F</td>
+<td>An auto layout frame: a column with 8 px gap and 16 px padding.</td>
+</tr>
+<tr>
+<td><strong>Rectangle</strong></td>
+<td>R</td>
+<td>A 100 × 100 grey box.</td>
+</tr>
+<tr>
+<td><strong>Text</strong></td>
+<td>T</td>
+<td>A paragraph, ready to type into.</td>
+</tr>
+<tr>
+<td><strong>Image</strong></td>
+<td>⇧⌘K</td>
+<td>An image from the page's own folder, picked from thumbnails with a search.</td>
+</tr>
+<tr>
+<td><strong>More</strong></td>
+<td></td>
+<td>A heading, button, link, input, divider or list.</td>
+</tr>
+</tbody>
+</table></div>
+<p dir="auto">Pick a tool and the page shows where the layer would land as you move the
+pointer: a blue line between two layers, with a dashed outline round the
+frame it would go into, or a filled outline round an empty frame. The bar
+says it in words, such as "Click to add the button before button.btn, in
+form.signup".</p>
+<ul>
+<li dir="auto"><strong>Click</strong> to add it there.</li>
+<li dir="auto"><strong>Drag</strong> to give a frame, rectangle or image a size as well.</li>
+<li dir="auto"><strong>Enter</strong> puts it by the selection instead: inside it if it is a frame,
+after it if not.</li>
+<li dir="auto"><strong>Esc</strong> puts the tool down. So does picking the same tool again.</li>
+</ul>
+<p dir="auto">Near the edge of a frame, the layer goes beside the frame rather than inside
+it, which is how a new card goes between two cards.</p>
+<p dir="auto">Once it is in, the new layer is selected, a text layer is ready to type, and
+the panel opens at the section you are likely to want next: <strong>Fill</strong> for a
+rectangle or a button, <strong>Auto layout</strong> for a frame, <strong>Text</strong> for text.</p>
+<p dir="auto"><strong>More uses the page's own look.</strong> A heading, button, link or input takes the
+classes of one already on the page, and the menu says which, for example
+<em>Button: like "Start a trial"</em>. A button picks one whose class says
+<code>primary</code>, <code>cta</code>, <code>main</code> or <code>accent</code> if there is one, so a new button looks
+like the page's main button rather than a grey browser default. Because they
+are classes and not copied styles, the new layer follows the page's
+stylesheet as the old one does.</p>
+<p dir="auto"><strong>Images</strong> come from the page's folder and the folders below it. To use a new
+one, put it in that folder in your vault and open the picker again.</p>
+<div class="callout" data-callout="note" data-callout-fold="" data-callout-metadata=""><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-pencil"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path><path d="m15 5 4 4"></path></svg></div><div class="callout-title-inner">R is Rectangle in Edit mode</div></div><div class="callout-content">
+<p dir="auto">As in Figma. In View and Comment modes R still opens Review mode, which is
+otherwise a click on the notch.</p>
+</div></div>
+<h2 data-heading="The panel" dir="auto" id="the-panel" data-osp-anchored=""><a class="osp-heading-self" href="#the-panel" data-osp-heading-self="" draggable="false">The <span class="osp-heading-tail">panel<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
+<p dir="auto">The panel sits beside the page and docks to the left or the right with the
+button at its top. It has two tabs.</p>
+<h3 data-heading="Design" dir="auto" id="design" data-osp-anchored=""><a class="osp-heading-self" href="#design" data-osp-heading-self="" draggable="false"><span class="osp-heading-tail">Design<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h3>
+<p dir="auto">For the selected layers, in sections you can fold. The sections you fold stay
+folded.</p>
+<div class="osp-table-wrap osp-scroller"><table>
+<thead>
+<tr>
+<th>Section</th>
+<th>What is in it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Position</strong></td>
+<td>Alignment in its parent, rotation, and <strong>Detach from auto layout</strong> to place a layer freely. A detached layer has <strong>Put back</strong> to return it.</td>
+</tr>
+<tr>
+<td><strong>Auto layout</strong></td>
+<td>Direction (down, across, wrap or grid), alignment, gap, padding on each side, columns and rows for a grid, and <strong>Clip content</strong>. <strong>Add auto layout</strong> on a layer without it.</td>
+</tr>
+<tr>
+<td><strong>Sizing</strong></td>
+<td>Width and height, each <strong>Fixed</strong>, <strong>Hug contents</strong> or <strong>Fill container</strong>, with <strong>Min and max</strong>.</td>
+</tr>
+<tr>
+<td><strong>Appearance</strong></td>
+<td>Opacity, corner radius (one for all corners or each separately) and blend mode.</td>
+</tr>
+<tr>
+<td><strong>Text</strong></td>
+<td>Font, weight, size, line height, letter spacing, alignment, case, decoration, truncation and colour.</td>
+</tr>
+<tr>
+<td><strong>Fill</strong></td>
+<td>Colours and gradients, and how an image fills its box.</td>
+</tr>
+<tr>
+<td><strong>Stroke</strong></td>
+<td>Colour, width and style.</td>
+</tr>
+<tr>
+<td><strong>Effects</strong></td>
+<td>Shadows, layer blur and background blur.</td>
+</tr>
+<tr>
+<td><strong>State</strong></td>
+<td>Shows the layer as <strong>Hover</strong>, <strong>Pressed</strong> or <strong>Focus</strong>, so the styles for those states can be edited too.</td>
+</tr>
+<tr>
+<td><strong>Code</strong></td>
+<td>Where the layer and each rule that styles it are, as a file and a line.</td>
+</tr>
+</tbody>
+</table></div>
+<p dir="auto">With nothing selected, the Design tab shows the page instead:</p>
+<ul>
+<li dir="auto"><strong>Page</strong>: its background, and <strong>Preview at</strong> Full, Tablet or Phone width.
+The narrower widths are still editable.</li>
+<li dir="auto"><strong>Variables</strong>: the page's colour and size variables (<code>--name</code>), editable in
+place.</li>
+<li dir="auto"><strong>History</strong>: every edit this session, newest first, with <strong>Undo to here</strong>.
+The <strong>History</strong> button on the bar opens it directly.</li>
+<li dir="auto"><strong>Shortcuts</strong>: the keys below.</li>
+</ul>
+<h3 data-heading="Layers" dir="auto" id="layers" data-osp-anchored=""><a class="osp-heading-self" href="#layers" data-osp-heading-self="" draggable="false"><span class="osp-heading-tail">Layers<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h3>
+<p dir="auto">The page as a tree. Search it, click a row to select the layer, toggle the
+eye to hide or show it, and drag a row to reorder. A layer the page's own
+script made is marked <strong>Script</strong>: it is not in the file, so it can be
+inspected but not moved or deleted.</p>
+<h2 data-heading="Several layers at once" dir="auto" id="several-layers-at-once" data-osp-anchored=""><a class="osp-heading-self" href="#several-layers-at-once" data-osp-heading-self="" draggable="false">Several layers at <span class="osp-heading-tail">once<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
+<p dir="auto">With more than one layer selected, a change in the panel applies to all of
+them, and so does every action on the bar. <strong>Shift+A</strong> adds auto layout,
+<strong>⌥⌘G</strong> frames the selection in a new auto layout frame, and <strong>⇧⌘G</strong> takes a
+frame apart again. <strong>⌥⌘C</strong> and <strong>⌥⌘V</strong> copy one layer's look (fill, stroke,
+radius, shadow, text styles) and paste it onto others, without its size or
+place. <strong>Select matching layers</strong> in the right-click menu selects every layer
+with the same tag and classes.</p>
+<h2 data-heading="Where a change is written" dir="auto" id="where-a-change-is-written" data-osp-anchored=""><a class="osp-heading-self" href="#where-a-change-is-written" data-osp-heading-self="" draggable="false">Where a change is <span class="osp-heading-tail">written<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
+<ul>
+<li dir="auto">A value on the layer's own <code>style</code> is changed there.</li>
+<li dir="auto">A value that comes from a stylesheet rule shared with other layers asks
+first: change <strong>this layer</strong> only, or <strong>all</strong> the layers the rule styles.
+The rule is changed in place, in the page or in its linked <code>.css</code> file.</li>
+<li dir="auto">A colour can be picked from the page's variables, from the colours already
+on the page, or made into a new variable with <strong>Create variable</strong>. The
+eyedropper (<strong>I</strong>) picks one from anywhere on the screen, in Chromium-based
+browsers.</li>
+<li dir="auto">On a page that changes with the window's width, <strong>Applies to</strong> chooses
+between every width and only this width and narrower (<code>@media</code>).</li>
+</ul>
+<p dir="auto">An edit changes only the characters it has to, so a diff of the file shows
+the change and nothing else, with the file's own indentation and quotes.</p>
+<h2 data-heading="Going to the code" dir="auto" id="going-to-the-code" data-osp-anchored=""><a class="osp-heading-self" href="#going-to-the-code" data-osp-heading-self="" draggable="false">Going to the <span class="osp-heading-tail">code<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
+<p dir="auto">The <strong>Code</strong> section names the file and line where the layer starts, and
+where each rule that styles it is. Click a location to copy it, as
+<code>path:line</code>, or use <strong>Open in</strong> to open the file at that line in your editor.</p>
+<p dir="auto">Which editor is a setting: <strong>Comments and editing → Open code in</strong>. VS Code by
+default; also Cursor, Windsurf, Zed, VS Code Insiders and Obsidian. Obsidian
+opens the file but not the line. <strong>Custom</strong> takes a link of your own with
+placeholders, for any editor that has a link format:</p>
+<div class="osp-table-wrap osp-scroller"><table>
+<thead>
+<tr>
+<th>Placeholder</th>
+<th>Becomes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{path}</code></td>
+<td>the file's full path on this computer</td>
+</tr>
+<tr>
+<td><code>{file}</code></td>
+<td>its path inside the vault</td>
+</tr>
+<tr>
+<td><code>{vault}</code></td>
+<td>the vault's name</td>
+</tr>
+<tr>
+<td><code>{line}</code>, <code>{column}</code></td>
+<td>where the layer or rule starts</td>
+</tr>
+</tbody>
+</table></div>
+<p dir="auto">For example <code>myeditor://open?path={path}&amp;line={line}</code>. <strong>Don't show a link</strong>
+leaves only the location to copy.</p>
+<h2 data-heading="Undo, History and backups" dir="auto" id="undo-history-and-backups" data-osp-anchored=""><a class="osp-heading-self" href="#undo-history-and-backups" data-osp-heading-self="" draggable="false">Undo, History and <span class="osp-heading-tail">backups<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
+<p dir="auto">Every edit can be undone with <strong>⌘Z</strong> and redone with <strong>⇧⌘Z</strong>, or taken back
+several at a time with <strong>Undo to here</strong> in History. A move or a group of
+changes made at once undoes as one step.</p>
+<p dir="auto">Before the first edit to a file each time the preview server starts, a copy
+of the file is kept in the review folder, under <code>edit-backups/</code>. It never ends
+in <code>.html</code>, so it is never published.</p>
+<h2 data-heading="Keyboard shortcuts" dir="auto" id="keyboard-shortcuts" data-osp-anchored=""><a class="osp-heading-self" href="#keyboard-shortcuts" data-osp-heading-self="" draggable="false">Keyboard <span class="osp-heading-tail">shortcuts<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
+<p dir="auto">On Windows and Linux, read <strong>Ctrl</strong> for ⌘, <strong>Alt</strong> for ⌥ and <strong>Shift</strong> for ⇧.</p>
+<p dir="auto"><strong>Modes</strong></p>
+<div class="osp-table-wrap osp-scroller"><table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E</td>
+<td>Edit mode.</td>
+</tr>
+<tr>
+<td>V / C</td>
+<td>View mode / Comment mode.</td>
+</tr>
+<tr>
+<td>Esc, with nothing selected</td>
+<td>Leaves Edit mode.</td>
+</tr>
+<tr>
+<td>Hold Space</td>
+<td>Use the page as in View mode (open a menu, turn a slide), then let go and edit what it showed.</td>
+</tr>
+</tbody>
+</table></div>
+<p dir="auto"><strong>Selecting</strong></p>
+<div class="osp-table-wrap osp-scroller"><table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Click / Alt-click</td>
+<td>Select / select the deepest layer.</td>
+</tr>
+<tr>
+<td>Shift-click</td>
+<td>Add to or take from the selection.</td>
+</tr>
+<tr>
+<td>Double-click / Enter</td>
+<td>Go inside the layer, or edit its words if it is text.</td>
+</tr>
+<tr>
+<td>Esc / ⇧Enter</td>
+<td>Go up to its parent.</td>
+</tr>
+<tr>
+<td>Tab / ⇧Tab</td>
+<td>Next / previous layer beside it.</td>
+</tr>
+<tr>
+<td>⌘A</td>
+<td>Select every layer beside it.</td>
+</tr>
+</tbody>
+</table></div>
+<p dir="auto"><strong>Adding</strong></p>
+<div class="osp-table-wrap osp-scroller"><table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F / R / T</td>
+<td>Frame / rectangle / text tool.</td>
+</tr>
+<tr>
+<td>⇧⌘K</td>
+<td>Image picker.</td>
+</tr>
+<tr>
+<td>Enter, with a tool out</td>
+<td>Add it by the selection.</td>
+</tr>
+<tr>
+<td>Esc, with a tool out</td>
+<td>Put the tool down.</td>
+</tr>
+</tbody>
+</table></div>
+<p dir="auto"><strong>Changing</strong></p>
+<div class="osp-table-wrap osp-scroller"><table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enter</td>
+<td>Edit the selected text. Enter again to finish, Esc to cancel.</td>
+</tr>
+<tr>
+<td>⌘D, or ⌥-drag</td>
+<td>Duplicate.</td>
+</tr>
+<tr>
+<td>⌘C / ⌘V</td>
+<td>Copy / paste layers.</td>
+</tr>
+<tr>
+<td>⌥⌘C / ⌥⌘V</td>
+<td>Copy / paste properties.</td>
+</tr>
+<tr>
+<td>Delete or Backspace</td>
+<td>Delete.</td>
+</tr>
+<tr>
+<td>⇧⌘H</td>
+<td>Hide or show.</td>
+</tr>
+<tr>
+<td>⇧A</td>
+<td>Add auto layout.</td>
+</tr>
+<tr>
+<td>⌥⌘G (or ⌘G) / ⇧⌘G</td>
+<td>Frame the selection / ungroup.</td>
+</tr>
+<tr>
+<td>Arrow keys</td>
+<td>Reorder it in its row, column or grid.</td>
+</tr>
+<tr>
+<td>⌘] / ⌘[</td>
+<td>Bring forward / send backward.</td>
+</tr>
+<tr>
+<td>Arrow keys, on a detached layer</td>
+<td>Nudge 1 px; with ⇧, 10 px.</td>
+</tr>
+<tr>
+<td>I</td>
+<td>Eyedropper.</td>
+</tr>
+<tr>
+<td>⌘Z / ⇧⌘Z</td>
+<td>Undo / redo.</td>
+</tr>
+</tbody>
+</table></div>
+<p dir="auto"><strong>Looking</strong></p>
+<div class="osp-table-wrap osp-scroller"><table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hold ⌥</td>
+<td>Measure the distance from the selection to the layer under the pointer.</td>
+</tr>
+<tr>
+<td>Right-click</td>
+<td>Every action, in a menu.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 data-heading="Settings" dir="auto" id="settings" data-osp-anchored=""><a class="osp-heading-self" href="#settings" data-osp-heading-self="" draggable="false"><span class="osp-heading-tail">Settings<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
+<div class="osp-table-wrap osp-scroller"><table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Where</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Include comment and edit tools</strong></td>
+<td>next to <strong>Build a preview</strong></td>
+<td>Puts the comment layer and Edit mode on the preview.</td>
+</tr>
+<tr>
+<td><strong>Publish HTML files as-is</strong></td>
+<td><strong>What to publish</strong></td>
+<td>Edit mode only appears on these pages.</td>
+</tr>
+<tr>
+<td><strong>Open code in</strong></td>
+<td><strong>Comments and editing → Edit mode</strong></td>
+<td>The editor the Code section opens a file in.</td>
+</tr>
+<tr>
+<td><strong>Review folder</strong></td>
+<td><strong>Comments and editing</strong></td>
+<td>Where <code>edit-backups/</code> is kept.</td>
+</tr>
+</tbody>
+</table></div>
+<p dir="auto">→ <a class="internal-link" href="../Reference/Every%20setting.html">Every setting</a></p>
+<h2 data-heading="What it does not do yet" dir="auto" id="what-it-does-not-do-yet" data-osp-anchored=""><a class="osp-heading-self" href="#what-it-does-not-do-yet" data-osp-heading-self="" draggable="false">What it does not do <span class="osp-heading-tail">yet<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
+<ul>
+<li dir="auto">Gap and padding fields do not offer size variables.</li>
+<li dir="auto"><strong>Put back</strong> on a detached layer keeps the fixed width it was given.</li>
+<li dir="auto">The panel floats over the page rather than pushing it aside.</li>
+<li dir="auto">The eyedropper needs a Chromium-based browser.</li>
+<li dir="auto">A layer the page's script made, rather than the file, can be styled but
+not moved, retyped or deleted.</li>
+</ul>
+<p dir="auto">→ <a class="internal-link" href="../Reference/Known%20limits.html">Known limits</a></p>
+<h2 data-heading="Related" dir="auto" id="related" data-osp-anchored=""><a class="osp-heading-self" href="#related" data-osp-heading-self="" draggable="false"><span class="osp-heading-tail">Related<span aria-hidden="true" class="osp-heading-link" data-osp-heading-link="" title="Copy link to this section"><svg class="osp-icon-sm osp-heading-icon-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.66 0l2.83-2.83a4 4 0 1 0-5.66-5.66l-1.1 1.1"></path><path d="M13.4 10.6a4 4 0 0 0-5.66 0L4.9 13.4a4 4 0 1 0 5.66 5.66l1.1-1.1"></path></svg><svg class="osp-icon-sm osp-heading-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"></path></svg></span></span></a></h2>
+<ul>
+<li dir="auto"><a class="internal-link" href="./Publishing%20a%20built%20app.html">Publishing a built app</a>: publishing HTML as-is, which Edit mode needs.</li>
+<li dir="auto"><a class="internal-link" href="./Reviewing%20a%20built%20site.html">Reviewing a built site</a>: the comment layer that shares the notch.</li>
+<li dir="auto"><a class="internal-link" href="../Examples/prototype/About%20the%20prototype%20demo.html">About the prototype demo</a>: a prototype to try it on.</li>
+</ul>
+</article><section class="osp-mentions" id="mentions"><h2>Mentioned in</h2><div class="osp-mentions-cols"><a class="osp-mention" href="../Examples/prototype/About%20the%20prototype%20demo.html"><span class="osp-mention-title">About the prototype demo</span><span class="osp-mention-excerpt">…change is written into basket.html, and Undo takes it back. → Editing a prototype</span></a><a class="osp-mention" href="../Reference/Every%20setting.html"><span class="osp-mention-title">Every setting</span><span class="osp-mention-excerpt">…layer and Edit mode on the preview. → Reviewing a built site, Editing a prototype</span></a><a class="osp-mention" href="../Reference/Known%20limits.html"><span class="osp-mention-title">Known limits</span><span class="osp-mention-excerpt">…made cannot be moved or deleted, since it is not in the file. → Editing a prototype</span></a><a class="osp-mention" href="../Features/Reviewing%20a%20built%20site.html"><span class="osp-mention-title">Reviewing a built site</span><span class="osp-mention-excerpt">…and edit tools, brings Edit mode, which shares the notch: see Editing a prototype.</span></a><a class="osp-mention" href="../Examples/See%20it%20working.html"><span class="osp-mention-title">See it working</span></a><a class="osp-mention" href="../index.html"><span class="osp-mention-title">Start here</span><span class="osp-mention-excerpt">Editing a prototype: change a prototype from its preview with Figma-style tools, a Design panel and keyboard shortcuts, written straight into its…</span></a><a class="osp-mention" href="../Reference/This%20vault%20as%20a%20worked%20example.html"><span class="osp-mention-title">This vault as a worked example</span><span class="osp-mention-excerpt">…Edit mode. → Reviewing a built site, About the prototype demo, Editing a prototype</span></a><a class="osp-mention" href="../Features/Publishing%20a%20built%20app.html"><span class="osp-mention-title">Publishing a built app</span><span class="osp-mention-excerpt">Publishing a built app: publishing HTML as-is, which Edit mode needs.</span></a></div></section><div class="osp-source markdown-rendered" data-osp-source-pane><figure class="osp-code osp-source-block"><figcaption class="osp-code-bar"><span class="osp-code-lang">Editing a prototype.md</span><div class="osp-code-tools"><button class="osp-code-btn" type="button" data-osp-copy title="Copy this note's Markdown"><svg class="osp-icon-sm osp-code-icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4.5A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5V5"/></svg><svg class="osp-icon-sm osp-code-icon-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"/></svg><span class="osp-code-btn-label">Copy</span></button></div></figcaption><pre><code># Editing a prototype
+
+An HTML page published as-is can be edited in its preview, with tools and a
+panel that work like Figma's. What you change is written straight into the
+page's file in your vault, so there is no design file to keep in step with
+the code: the prototype *is* the design.
+
+![[edit-mode.png]]
+
+*The Team card selected, with the Rectangle tool out. The blue line above
+**Start a trial** shows where the rectangle would go, and the Design panel on
+the right shows the card's auto layout, sizing, appearance, fill and stroke.*
+
+## What it needs
+
+- **Publish HTML files as-is** on, in **What to publish**.
+- **Include comment and edit tools** on, next to **Build a preview**.
+- A preview opened from the plugin: **Build a preview**, then **Open the
+  preview**. The plugin's local server is what writes the file, so Edit mode
+  exists only there. A published site never carries it, even with comments
+  switched on for readers.
+
+Edit mode works on the page that is the prototype itself, not on a note that
+embeds one. In a note, use **Open full page** on the embed to get there.
+
+&gt; [!example] Try it on this vault
+&gt; Build a preview of this vault, open [[See it working]], and use **Open full
+&gt; page** on the basket prototype. Press **E**, or click the pencil on the
+&gt; notch at the bottom. Every change you make is written into
+&gt; `Examples/prototype/basket.html`, and **Undo** takes it back out.
+
+## Selecting
+
+- **Click** a layer to select it. The first click picks the outermost layer
+  that is not the size of the whole page, the way Figma picks a frame.
+- **Double-click** to go one level inside it, and **Esc** to go back up. On a
+  text layer that is already selected, double-click edits its words.
+- **Alt-click** selects the deepest layer under the pointer directly.
+- **Shift-click** adds a layer to the selection, or takes it away.
+- **Right-click** opens a menu with everything the bar and the shortcuts do.
+
+The bar under the page shows the selected layer's path, such as
+`main.plans › div.plan`. Click a step in the path to select it.
+
+## The bar
+
+**Edit text**, **Duplicate**, **Hide** and **Delete**, then the insert tools,
+then **Undo**, **Redo** and **History**.
+
+- **Drag** a layer to move it. In a row or column it reorders, with a blue
+  line showing where it will land. Into an empty frame it goes inside. On a
+  grid it can drop into an empty cell.
+- **Alt-drag** leaves the original where it is and drops a copy.
+- **Drag a handle** on the selection's right or bottom edge, or its corner,
+  to resize it.
+
+## Adding layers
+
+| Tool | Key | What it adds |
+| --- | --- | --- |
+| **Frame** | F | An auto layout frame: a column with 8 px gap and 16 px padding. |
+| **Rectangle** | R | A 100 × 100 grey box. |
+| **Text** | T | A paragraph, ready to type into. |
+| **Image** | ⇧⌘K | An image from the page's own folder, picked from thumbnails with a search. |
+| **More** | | A heading, button, link, input, divider or list. |
+
+Pick a tool and the page shows where the layer would land as you move the
+pointer: a blue line between two layers, with a dashed outline round the
+frame it would go into, or a filled outline round an empty frame. The bar
+says it in words, such as &quot;Click to add the button before button.btn, in
+form.signup&quot;.
+
+- **Click** to add it there.
+- **Drag** to give a frame, rectangle or image a size as well.
+- **Enter** puts it by the selection instead: inside it if it is a frame,
+  after it if not.
+- **Esc** puts the tool down. So does picking the same tool again.
+
+Near the edge of a frame, the layer goes beside the frame rather than inside
+it, which is how a new card goes between two cards.
+
+Once it is in, the new layer is selected, a text layer is ready to type, and
+the panel opens at the section you are likely to want next: **Fill** for a
+rectangle or a button, **Auto layout** for a frame, **Text** for text.
+
+**More uses the page's own look.** A heading, button, link or input takes the
+classes of one already on the page, and the menu says which, for example
+*Button: like &quot;Start a trial&quot;*. A button picks one whose class says
+`primary`, `cta`, `main` or `accent` if there is one, so a new button looks
+like the page's main button rather than a grey browser default. Because they
+are classes and not copied styles, the new layer follows the page's
+stylesheet as the old one does.
+
+**Images** come from the page's folder and the folders below it. To use a new
+one, put it in that folder in your vault and open the picker again.
+
+&gt; [!note] R is Rectangle in Edit mode
+&gt; As in Figma. In View and Comment modes R still opens Review mode, which is
+&gt; otherwise a click on the notch.
+
+## The panel
+
+The panel sits beside the page and docks to the left or the right with the
+button at its top. It has two tabs.
+
+### Design
+
+For the selected layers, in sections you can fold. The sections you fold stay
+folded.
+
+| Section | What is in it |
+| --- | --- |
+| **Position** | Alignment in its parent, rotation, and **Detach from auto layout** to place a layer freely. A detached layer has **Put back** to return it. |
+| **Auto layout** | Direction (down, across, wrap or grid), alignment, gap, padding on each side, columns and rows for a grid, and **Clip content**. **Add auto layout** on a layer without it. |
+| **Sizing** | Width and height, each **Fixed**, **Hug contents** or **Fill container**, with **Min and max**. |
+| **Appearance** | Opacity, corner radius (one for all corners or each separately) and blend mode. |
+| **Text** | Font, weight, size, line height, letter spacing, alignment, case, decoration, truncation and colour. |
+| **Fill** | Colours and gradients, and how an image fills its box. |
+| **Stroke** | Colour, width and style. |
+| **Effects** | Shadows, layer blur and background blur. |
+| **State** | Shows the layer as **Hover**, **Pressed** or **Focus**, so the styles for those states can be edited too. |
+| **Code** | Where the layer and each rule that styles it are, as a file and a line. |
+
+With nothing selected, the Design tab shows the page instead:
+
+- **Page**: its background, and **Preview at** Full, Tablet or Phone width.
+  The narrower widths are still editable.
+- **Variables**: the page's colour and size variables (`--name`), editable in
+  place.
+- **History**: every edit this session, newest first, with **Undo to here**.
+  The **History** button on the bar opens it directly.
+- **Shortcuts**: the keys below.
+
+### Layers
+
+The page as a tree. Search it, click a row to select the layer, toggle the
+eye to hide or show it, and drag a row to reorder. A layer the page's own
+script made is marked **Script**: it is not in the file, so it can be
+inspected but not moved or deleted.
+
+## Several layers at once
+
+With more than one layer selected, a change in the panel applies to all of
+them, and so does every action on the bar. **Shift+A** adds auto layout,
+**⌥⌘G** frames the selection in a new auto layout frame, and **⇧⌘G** takes a
+frame apart again. **⌥⌘C** and **⌥⌘V** copy one layer's look (fill, stroke,
+radius, shadow, text styles) and paste it onto others, without its size or
+place. **Select matching layers** in the right-click menu selects every layer
+with the same tag and classes.
+
+## Where a change is written
+
+- A value on the layer's own `style` is changed there.
+- A value that comes from a stylesheet rule shared with other layers asks
+  first: change **this layer** only, or **all** the layers the rule styles.
+  The rule is changed in place, in the page or in its linked `.css` file.
+- A colour can be picked from the page's variables, from the colours already
+  on the page, or made into a new variable with **Create variable**. The
+  eyedropper (**I**) picks one from anywhere on the screen, in Chromium-based
+  browsers.
+- On a page that changes with the window's width, **Applies to** chooses
+  between every width and only this width and narrower (`@media`).
+
+An edit changes only the characters it has to, so a diff of the file shows
+the change and nothing else, with the file's own indentation and quotes.
+
+## Going to the code
+
+The **Code** section names the file and line where the layer starts, and
+where each rule that styles it is. Click a location to copy it, as
+`path:line`, or use **Open in** to open the file at that line in your editor.
+
+Which editor is a setting: **Comments and editing → Open code in**. VS Code by
+default; also Cursor, Windsurf, Zed, VS Code Insiders and Obsidian. Obsidian
+opens the file but not the line. **Custom** takes a link of your own with
+placeholders, for any editor that has a link format:
+
+| Placeholder | Becomes |
+| --- | --- |
+| `{path}` | the file's full path on this computer |
+| `{file}` | its path inside the vault |
+| `{vault}` | the vault's name |
+| `{line}`, `{column}` | where the layer or rule starts |
+
+For example `myeditor://open?path={path}&amp;line={line}`. **Don't show a link**
+leaves only the location to copy.
+
+## Undo, History and backups
+
+Every edit can be undone with **⌘Z** and redone with **⇧⌘Z**, or taken back
+several at a time with **Undo to here** in History. A move or a group of
+changes made at once undoes as one step.
+
+Before the first edit to a file each time the preview server starts, a copy
+of the file is kept in the review folder, under `edit-backups/`. It never ends
+in `.html`, so it is never published.
+
+## Keyboard shortcuts
+
+On Windows and Linux, read **Ctrl** for ⌘, **Alt** for ⌥ and **Shift** for ⇧.
+
+**Modes**
+
+| Key | Does |
+| --- | --- |
+| E | Edit mode. |
+| V / C | View mode / Comment mode. |
+| Esc, with nothing selected | Leaves Edit mode. |
+| Hold Space | Use the page as in View mode (open a menu, turn a slide), then let go and edit what it showed. |
+
+**Selecting**
+
+| Key | Does |
+| --- | --- |
+| Click / Alt-click | Select / select the deepest layer. |
+| Shift-click | Add to or take from the selection. |
+| Double-click / Enter | Go inside the layer, or edit its words if it is text. |
+| Esc / ⇧Enter | Go up to its parent. |
+| Tab / ⇧Tab | Next / previous layer beside it. |
+| ⌘A | Select every layer beside it. |
+
+**Adding**
+
+| Key | Does |
+| --- | --- |
+| F / R / T | Frame / rectangle / text tool. |
+| ⇧⌘K | Image picker. |
+| Enter, with a tool out | Add it by the selection. |
+| Esc, with a tool out | Put the tool down. |
+
+**Changing**
+
+| Key | Does |
+| --- | --- |
+| Enter | Edit the selected text. Enter again to finish, Esc to cancel. |
+| ⌘D, or ⌥-drag | Duplicate. |
+| ⌘C / ⌘V | Copy / paste layers. |
+| ⌥⌘C / ⌥⌘V | Copy / paste properties. |
+| Delete or Backspace | Delete. |
+| ⇧⌘H | Hide or show. |
+| ⇧A | Add auto layout. |
+| ⌥⌘G (or ⌘G) / ⇧⌘G | Frame the selection / ungroup. |
+| Arrow keys | Reorder it in its row, column or grid. |
+| ⌘] / ⌘[ | Bring forward / send backward. |
+| Arrow keys, on a detached layer | Nudge 1 px; with ⇧, 10 px. |
+| I | Eyedropper. |
+| ⌘Z / ⇧⌘Z | Undo / redo. |
+
+**Looking**
+
+| Key | Does |
+| --- | --- |
+| Hold ⌥ | Measure the distance from the selection to the layer under the pointer. |
+| Right-click | Every action, in a menu. |
+
+## Settings
+
+| Setting | Where | What it does |
+| --- | --- | --- |
+| **Include comment and edit tools** | next to **Build a preview** | Puts the comment layer and Edit mode on the preview. |
+| **Publish HTML files as-is** | **What to publish** | Edit mode only appears on these pages. |
+| **Open code in** | **Comments and editing → Edit mode** | The editor the Code section opens a file in. |
+| **Review folder** | **Comments and editing** | Where `edit-backups/` is kept. |
+
+→ [[Every setting]]
+
+## What it does not do yet
+
+- Gap and padding fields do not offer size variables.
+- **Put back** on a detached layer keeps the fixed width it was given.
+- The panel floats over the page rather than pushing it aside.
+- The eyedropper needs a Chromium-based browser.
+- A layer the page's script made, rather than the file, can be styled but
+  not moved, retyped or deleted.
+
+→ [[Known limits]]
+
+## Related
+
+- [[Publishing a built app]]: publishing HTML as-is, which Edit mode needs.
+- [[Reviewing a built site]]: the comment layer that shares the notch.
+- [[About the prototype demo]]: a prototype to try it on.</code></pre></figure></div></div><div class="osp-to-top-dock"><button type="button" class="osp-to-top" data-osp-to-top hidden aria-label="Back to top" title="Back to top"><svg class="osp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m6 11 6-6 6 6"/></svg></button></div></main><aside class="osp-rail osp-scroll" aria-label="About this note"><p class="osp-stats osp-stats-rail"><span class="osp-num">9 min</span><span aria-hidden="true">·</span><span class="osp-num">2064 words</span><span aria-hidden="true">·</span><span class="osp-num">13 sections</span></p><section class="osp-rail-section osp-rail-outline"><div class="osp-rail-title osp-outline-title"><h2 class="osp-browse-name">On this page</h2><span class="osp-tree-tools" data-osp-outline-tools hidden><button type="button" class="osp-tree-tool" data-osp-outline-collapse aria-pressed="false" aria-label="Collapse all" title="Collapse all"><svg class="osp-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 20 5-5 5 5"/><path d="m7 4 5 5 5-5"/></svg></button></span></div><ul class="osp-outline" data-osp-outline><li class="osp-lvl2"><a href="#what-it-needs" data-osp-spy="what-it-needs">What it needs</a></li><li class="osp-lvl2"><a href="#selecting" data-osp-spy="selecting">Selecting</a></li><li class="osp-lvl2"><a href="#the-bar" data-osp-spy="the-bar">The bar</a></li><li class="osp-lvl2"><a href="#adding-layers" data-osp-spy="adding-layers">Adding layers</a></li><li class="osp-lvl2"><a href="#the-panel" data-osp-spy="the-panel">The panel</a></li><li class="osp-lvl3"><a href="#design" data-osp-spy="design">Design</a></li><li class="osp-lvl3"><a href="#layers" data-osp-spy="layers">Layers</a></li><li class="osp-lvl2"><a href="#several-layers-at-once" data-osp-spy="several-layers-at-once">Several layers at once</a></li><li class="osp-lvl2"><a href="#where-a-change-is-written" data-osp-spy="where-a-change-is-written">Where a change is written</a></li><li class="osp-lvl2"><a href="#going-to-the-code" data-osp-spy="going-to-the-code">Going to the code</a></li><li class="osp-lvl2"><a href="#undo-history-and-backups" data-osp-spy="undo-history-and-backups">Undo, History and backups</a></li><li class="osp-lvl2"><a href="#keyboard-shortcuts" data-osp-spy="keyboard-shortcuts">Keyboard shortcuts</a></li><li class="osp-lvl2"><a href="#settings" data-osp-spy="settings">Settings</a></li><li class="osp-lvl2"><a href="#what-it-does-not-do-yet" data-osp-spy="what-it-does-not-do-yet">What it does not do yet</a></li><li class="osp-lvl2"><a href="#related" data-osp-spy="related">Related</a></li></ul></section><section class="osp-rail-section"><h2 class="osp-rail-title">Linked from<span class="osp-num">7</span></h2><a class="osp-mention" href="../Examples/prototype/About%20the%20prototype%20demo.html"><span class="osp-mention-title">About the prototype demo</span><span class="osp-mention-excerpt">…change is written into basket.html, and Undo takes it back. → Editing a prototype</span></a><a class="osp-mention" href="../Reference/Every%20setting.html"><span class="osp-mention-title">Every setting</span><span class="osp-mention-excerpt">…layer and Edit mode on the preview. → Reviewing a built site, Editing a prototype</span></a><a class="osp-mention" href="../Reference/Known%20limits.html"><span class="osp-mention-title">Known limits</span><span class="osp-mention-excerpt">…made cannot be moved or deleted, since it is not in the file. → Editing a prototype</span></a><a class="osp-mention" href="../Features/Reviewing%20a%20built%20site.html"><span class="osp-mention-title">Reviewing a built site</span><span class="osp-mention-excerpt">…and edit tools, brings Edit mode, which shares the notch: see Editing a prototype.</span></a><a class="osp-mention" href="../Examples/See%20it%20working.html"><span class="osp-mention-title">See it working</span></a><a class="osp-mention" href="../index.html"><span class="osp-mention-title">Start here</span><span class="osp-mention-excerpt">Editing a prototype: change a prototype from its preview with Figma-style tools, a Design panel and keyboard shortcuts, written straight into its…</span></a><a class="osp-mention" href="../Reference/This%20vault%20as%20a%20worked%20example.html"><span class="osp-mention-title">This vault as a worked example</span><span class="osp-mention-excerpt">…Edit mode. → Reviewing a built site, About the prototype demo, Editing a prototype</span></a></section><section class="osp-rail-section"><h2 class="osp-rail-title">Related</h2><a class="osp-mention" href="../Features/Publishing%20a%20built%20app.html"><span class="osp-mention-title">Publishing a built app</span><span class="osp-mention-excerpt">Publishing a built app: publishing HTML as-is, which Edit mode needs.</span></a></section><section class="osp-rail-section osp-rail-graph"><h2 class="osp-rail-title">Local graph<span class="osp-num">8</span></h2><svg class="osp-graph" viewBox="0 0 240 170" role="img" aria-label="Notes linked to Editing a prototype"><line x1="120" y1="85" x2="120" y2="33.3" class="osp-graph-edge osp-graph-both"/><line x1="120" y1="85" x2="164.5" y2="48.5" class="osp-graph-edge osp-graph-both"/><line x1="120" y1="85" x2="183" y2="85" class="osp-graph-edge osp-graph-both"/><line x1="120" y1="85" x2="164.5" y2="121.5" class="osp-graph-edge osp-graph-both"/><line x1="120" y1="85" x2="120" y2="136.7" class="osp-graph-edge osp-graph-both"/><line x1="120" y1="85" x2="75.5" y2="121.5" class="osp-graph-edge osp-graph-out"/><line x1="120" y1="85" x2="57" y2="85" class="osp-graph-edge osp-graph-in"/><line x1="120" y1="85" x2="75.5" y2="48.5" class="osp-graph-edge osp-graph-in"/><a href="../Examples/prototype/About%20the%20prototype%20demo.html" class="osp-graph-node"><title>About the prototype demo — links both ways</title><circle cx="120" cy="33.3" r="4.5"/></a><a href="../Reference/Every%20setting.html" class="osp-graph-node"><title>Every setting — links both ways</title><circle cx="164.5" cy="48.5" r="4.5"/></a><a href="../Reference/Known%20limits.html" class="osp-graph-node"><title>Known limits — links both ways</title><circle cx="183" cy="85" r="4.5"/></a><a href="../Features/Reviewing%20a%20built%20site.html" class="osp-graph-node"><title>Reviewing a built site — links both ways</title><circle cx="164.5" cy="121.5" r="4.5"/></a><a href="../Examples/See%20it%20working.html" class="osp-graph-node"><title>See it working — links both ways</title><circle cx="120" cy="136.7" r="4.5"/></a><a href="../Features/Publishing%20a%20built%20app.html" class="osp-graph-node"><title>Publishing a built app — linked from here</title><circle cx="75.5" cy="121.5" r="4.5"/></a><a href="../index.html" class="osp-graph-node"><title>Start here — links here</title><circle cx="57" cy="85" r="4.5"/></a><a href="../Reference/This%20vault%20as%20a%20worked%20example.html" class="osp-graph-node"><title>This vault as a worked example — links here</title><circle cx="75.5" cy="48.5" r="4.5"/></a><circle cx="120" cy="85" r="6.5" class="osp-graph-centre"/></svg><ul class="osp-graph-key"><li><a class="osp-row" href="../Examples/prototype/About%20the%20prototype%20demo.html"><span class="osp-graph-dot osp-graph-both" aria-hidden="true"></span><span class="osp-label">About the prototype demo</span></a></li><li><a class="osp-row" href="../Reference/Every%20setting.html"><span class="osp-graph-dot osp-graph-both" aria-hidden="true"></span><span class="osp-label">Every setting</span></a></li><li><a class="osp-row" href="../Reference/Known%20limits.html"><span class="osp-graph-dot osp-graph-both" aria-hidden="true"></span><span class="osp-label">Known limits</span></a></li><li><a class="osp-row" href="../Features/Reviewing%20a%20built%20site.html"><span class="osp-graph-dot osp-graph-both" aria-hidden="true"></span><span class="osp-label">Reviewing a built site</span></a></li><li><a class="osp-row" href="../Examples/See%20it%20working.html"><span class="osp-graph-dot osp-graph-both" aria-hidden="true"></span><span class="osp-label">See it working</span></a></li><li><a class="osp-row" href="../Features/Publishing%20a%20built%20app.html"><span class="osp-graph-dot osp-graph-out" aria-hidden="true"></span><span class="osp-label">Publishing a built app</span></a></li><li><a class="osp-row" href="../index.html"><span class="osp-graph-dot osp-graph-in" aria-hidden="true"></span><span class="osp-label">Start here</span></a></li><li><a class="osp-row" href="../Reference/This%20vault%20as%20a%20worked%20example.html"><span class="osp-graph-dot osp-graph-in" aria-hidden="true"></span><span class="osp-label">This vault as a worked example</span></a></li></ul></section></aside></div>
+<script src="../assets/site.js"></script>
+
+</body>
+</html>
