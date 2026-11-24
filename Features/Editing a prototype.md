@@ -194,6 +194,42 @@ placeholders, for any editor that has a link format:
 For example `myeditor://open?path={path}&line={line}`. **Don't show a link**
 leaves only the location to copy.
 
+### A layer the page's script made
+
+Some layers are not written in the file: the page's JavaScript builds them
+when it loads, from a list of strings or from data. The bar says so when you
+select one (*Made by the page's script, so it isn't in the file*), and the
+Layers tab marks it **Script**.
+
+You can restyle one: colour, size and layout go into a CSS rule for its
+class, which changes every layer like it. Moving or deleting it can't be done
+from the page, because there is no place in the HTML to write that to.
+
+**Its words often can be changed.** The plugin looks for them in the page's
+`<script>` blocks and the `.js` files it loads. When they are written out
+once, in a string, **Edit text**, **Enter** and double-click work as on any
+other text, and the new words go into that string. Quotes and backticks in
+what you type are escaped for you, and **Undo** puts the old words back.
+
+When they can't be changed, **Edit text** is greyed out, and its tooltip, the
+bar and the **Code** section say why:
+
+| The reason | What it means | What to do |
+| --- | --- | --- |
+| *The script gets them from data* | The words are not in the page's scripts at all: they come from a JSON file, a server, or a value worked out in code. | Change them where the data is. |
+| *Put together from pieces* | The script builds them from parts, such as `${count} items left`, so there is no one place for the whole sentence. | Change the part you want in the script; **Code** shows where. |
+| *In the scripts several times* | The same words are written in more than one place, and which one made this layer can't be told. | **Code** lists each place. |
+| *Other layers inside it* | It holds more than words. | Double-click to select the words inside it. |
+
+Angle brackets can't be typed into a script's words from the page, since
+many scripts put their strings into the page as HTML.
+
+**Code** shows where the layer probably comes from either way: *Found by its
+text* when the words are there, and *Found by its class* when only the class
+is, which is usually where the script makes the layer from data. When the
+text has a number in it that the script fills in, such as *3 items left*,
+Code looks for the words around the number instead.
+
 ## Undo, History and backups
 
 Every edit can be undone with **⌘Z** and redone with **⇧⌘Z**, or taken back
@@ -280,7 +316,8 @@ On Windows and Linux, read **Ctrl** for ⌘, **Alt** for ⌥ and **Shift** for �
 - The panel floats over the page rather than pushing it aside.
 - The eyedropper needs a Chromium-based browser.
 - A layer the page's script made, rather than the file, can be styled but
-  not moved, retyped or deleted.
+  not moved or deleted. Its words can be changed only when they are written
+  out once in a script string.
 
 → [[Known limits]]
 
