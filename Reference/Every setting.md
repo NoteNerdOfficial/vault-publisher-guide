@@ -100,6 +100,7 @@ Three parts, under their own headings.
 | --- | --- | --- |
 | **Open code in** | VS Code | Or Cursor, Windsurf, Zed, VS Code Insiders, Obsidian, **Custom…** or **Don't show a link**. → [[Editing a prototype]] |
 | **Custom link** | empty | With **Custom…**: a link with `{path}`, `{file}`, `{vault}`, `{line}` and `{column}`. |
+| **Change requests folder** | `Change requests` | Where Edit mode's **Describe** saves a change request as a note. → [[Editing a prototype#Describing a change for an AI tool]] |
 
 **Comments on the published site**
 

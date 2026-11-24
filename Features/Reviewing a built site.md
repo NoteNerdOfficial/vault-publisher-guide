@@ -101,6 +101,7 @@ brings Edit mode, which shares the notch: see [[Editing a prototype]].
 | Setting | What it does |
 | --- | --- |
 | **Open code in** | The editor Edit mode's Code section opens a file in. → [[Editing a prototype]] |
+| **Change requests folder** | Where Edit mode's Describe saves a change request as a note. → [[Editing a prototype]] |
 
 ### Comments on the published site
 
