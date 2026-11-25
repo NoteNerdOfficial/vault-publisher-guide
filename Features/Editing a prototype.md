@@ -227,6 +227,12 @@ plan", "give it the same look as that button". **Describe** lets you say
 them on the page, point at what you mean, and hand them to an AI coding tool
 such as Claude Code or Cursor with the code behind each layer.
 
+![[describe.png]]
+
+*Two changes in the stack above the bar, and a third being written about the
+heading, pointing at the Team plan's price as ⑥. Every layer the request
+points at has a dashed outline and its number on the page.*
+
 1. **Select a layer and press `/`**, or click **Describe** on the bar. The
    bar's message line becomes a prompt, starting with that layer as ①.
 2. **Type what should change.** To point at another layer, click it on the
@@ -241,6 +247,9 @@ A layer keeps its number everywhere it is mentioned, so "match ②" in one
 change and "② bigger" in another are about the same layer.
 
 ### The stack
+
+The stack floats above the bar on a card of its own, with **Changes** and
+**What's copied** at the top and the buttons at the bottom.
 
 - **Click a change**, or its pencil, to load it back into the bar with its
   words and references. The bar says *Editing change 1*. Change the words,
