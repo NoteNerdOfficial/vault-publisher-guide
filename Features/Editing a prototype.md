@@ -309,13 +309,17 @@ The stack floats above the bar on a card of its own, with **Changes** and
 
 ### Handing it over
 
-- **Copy for AI** (**⌘Enter**) puts the text on the clipboard. Paste it into
-  Claude Code, Cursor or any AI tool.
+- **Copy for AI** (**⌘Enter**) puts the text on the clipboard, and the
+  button says **Copied**. Paste it into Claude Code, Cursor or any AI tool.
 - **Save as note** writes the same text to a note in the vault, in the
   **Change requests** folder by default, named for the page and the day,
   such as `pricing 2026-11-24.md`. Its frontmatter names the page and has
   `status: open`. Tell your AI tool to read the note and make the changes,
-  and keep it as a record of what was asked.
+  and keep it as a record of what was asked. The stack says which note it
+  saved, with **Open note** to open it in Obsidian, and saving the same
+  request again does not make a second note. A page called `index.html` is
+  named for its folder. Change the folder with **Change requests folder** in
+  the plugin's settings, which suggests the vault's folders as you type.
 
 Describe never changes the page's files, and it is not part of comments or
 review: nothing you describe shows to a reviewer or on a published site.
