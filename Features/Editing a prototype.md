@@ -53,11 +53,11 @@ The bar under the page shows the selected layer's path, such as
 
 ## The bar
 
-**Edit text**, **Duplicate**, **Hide** and **Delete**, then the insert tools,
-then **Undo**, **Redo** and **History**.
+**Edit text**, **Duplicate**, **Hide** and **Delete**, then the insert tools
+and **Insert**, then **Describe**, **Undo**, **Redo** and **History**.
 
-- **Drag** a layer to move it. In a row or column it reorders, with a blue
-  line showing where it will land. Into an empty frame it goes inside. On a
+- **Drag** a layer to move it. In a row or column it reorders, with a line
+  showing where it will land. Into an empty frame it goes inside. On a
   grid it can drop into an empty cell.
 - **Alt-drag** leaves the original where it is and drops a copy.
 - **Drag a handle** on the selection's right or bottom edge, or its corner,
@@ -71,10 +71,10 @@ then **Undo**, **Redo** and **History**.
 | **Rectangle** | R | A 100 × 100 grey box. |
 | **Text** | T | A paragraph, ready to type into. |
 | **Image** | ⇧⌘K | An image from the page's own folder, picked from thumbnails with a search. |
-| **More** | | A heading, button, link, input, divider or list. |
+| **Insert** | | The page's own text styles and components, and the basics. See [[#Insert from the page]]. |
 
 Pick a tool and the page shows where the layer would land as you move the
-pointer: a blue line between two layers, with a dashed outline round the
+pointer: a line between two layers, with a dashed outline round the
 frame it would go into, or a filled outline round an empty frame. The bar
 says it in words, such as "Click to add the button before button.btn, in
 form.signup".
@@ -92,14 +92,6 @@ Once it is in, the new layer is selected, a text layer is ready to type, and
 the panel opens at the section you are likely to want next: **Fill** for a
 rectangle or a button, **Auto layout** for a frame, **Text** for text.
 
-**More uses the page's own look.** A heading, button, link or input takes the
-classes of one already on the page, and the menu says which, for example
-*Button: like "Start a trial"*. A button picks one whose class says
-`primary`, `cta`, `main` or `accent` if there is one, so a new button looks
-like the page's main button rather than a grey browser default. Because they
-are classes and not copied styles, the new layer follows the page's
-stylesheet as the old one does.
-
 **Images** come from the page's folder and the folders below it. To use a new
 one, put it in that folder in your vault and open the picker again.
 
@@ -107,10 +99,40 @@ one, put it in that folder in your vault and open the picker again.
 > As in Figma. In View and Comment modes R still opens Review mode, which is
 > otherwise a click on the notch.
 
+## Insert from the page
+
+**Insert** on the bar opens a palette above it of what the page is already
+made of, each shown as a preview in the page's own styles. Nothing has to be
+set up: it is all found from the page.
+
+![[insert.png]]
+
+- **In Plan card**, or wherever the selection is, comes first: the text
+  styles and components that part of the page already uses, in order. This is
+  what Insert opens on, since the next thing you add is usually one of these.
+- **Text**: the page's text styles, such as the heading like "Pick a plan" or
+  the price like "$0", sorted into **Headings**, **Body** and **Small text**.
+- **Components**: the page's pieces, sorted into **Buttons**, **Cards**,
+  **Lists & content**, **Forms**, **Navigation** and **Badges & media**. A
+  piece counts when it is interactive, has a class like `card` or `badge`, or
+  appears more than once.
+- **Basics**: a plain heading, button, link, input, divider or list. These
+  take the classes of one already on the page, so a new button looks like the
+  page's main button rather than a browser default.
+- **Search** looks across all of it, with results grouped the same way.
+
+**Click** one to add it by the selection. A card goes beside the other cards,
+not inside the one you are in. **Drag** one onto the page to put it where the
+line shows; the palette fades while you drag, so the page shows through. A
+text style or component is a copy of the page's own element, so it keeps the
+page's classes and follows its stylesheet, and text arrives ready to type
+over. Insert stays open while you click around the page, and **Esc** or **×**
+closes it.
+
 ## The panel
 
 The panel sits beside the page and docks to the left or the right with the
-button at its top. It has two tabs.
+button at its top. It has three tabs.
 
 ### Design
 
@@ -135,14 +157,30 @@ With nothing selected, the Design tab shows the page instead:
 
 - **Page**: its background, and **Preview at** Full, Tablet or Phone width.
   The narrower widths are still editable.
-- **Variables**: the page's colour and size variables (`--name`), editable in
-  place.
+- **Variables**: how many variables the page has, with **Open Variables**.
 - **History**: every edit this session, newest first, with **Undo to here**.
   The **History** button on the bar opens it directly.
 - **Changes**: what this session did to each file, as a diff: removed lines
   in red, added lines in green. **Copy** takes one file's changes, **Copy
   all** every file's, in the format `git diff` uses.
 - **Shortcuts**: the keys below.
+
+### Variables
+
+Every custom property the page declares (`--brand`, `--space-6`), by kind:
+**Colours**, **Sizes**, **Fonts** and **Other**. Each shows its value, which
+can be changed in place, and how many rules use it, or **unused**.
+
+![[variables.png]]
+
+- **Drag** a variable onto a layer on the page. The layer under the pointer
+  is outlined, and on release a menu asks where it goes, with the likeliest
+  first: **Fill**, **Text colour** or **Border colour** for a colour;
+  **Padding**, **Gap**, **Corner radius** or **Font size** for a size;
+  **Font** for a font.
+- **Click** a variable with one layer selected to be asked the same.
+- **New** opens a small form: a name, a value, and a line that says what
+  kind of field the value will fit as you type. It is added to `:root`.
 
 ### Layers
 
@@ -168,9 +206,15 @@ with the same tag and classes.
   first: change **this layer** only, or **all** the layers the rule styles.
   The rule is changed in place, in the page or in its linked `.css` file.
 - A colour can be picked from the page's variables, from the colours already
-  on the page, or made into a new variable with **Create variable**. The
-  eyedropper (**I**) picks one from anywhere on the screen, in Chromium-based
-  browsers.
+  on the page, or made into a new variable with **Create variable** in its
+  palette. The eyedropper (**I**) picks one from anywhere on the screen, in
+  Chromium-based browsers.
+- Padding, gap, corner radius, font size, line height, letter spacing and
+  Font have a **◇** that lists the variables that fit, and ends with
+  **Create variable from** the current value. A field that takes a variable
+  shows its name instead of a number: click the name to pick another, or
+  hover the field for **Detach variable**, which keeps the value as a plain
+  number.
 - On a page that changes with the window's width, **Applies to** chooses
   between every width and only this width and narrower (`@media`).
 
@@ -423,7 +467,9 @@ On Windows and Linux, read **Ctrl** for ⌘, **Alt** for ⌥ and **Shift** for �
 
 ## What it does not do yet
 
-- Gap and padding fields do not offer size variables.
+- Width and height have no **◇** for variables.
+- A text style from Insert can be added, but not applied to a layer already
+  on the page, since that can mean changing its tag.
 - **Put back** on a detached layer keeps the fixed width it was given.
 - The panel floats over the page rather than pushing it aside.
 - The eyedropper needs a Chromium-based browser.

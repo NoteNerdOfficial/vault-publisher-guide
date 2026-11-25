@@ -80,8 +80,9 @@ of your own lifts both, at the cost of hosting it.
 ## Edit mode is preview-only and has gaps
 
 Edit mode writes through the plugin's local server, so it exists only in a
-preview and only on HTML published as-is. Gap and padding fields do not offer
-size variables, **Put back** keeps a detached layer's fixed width, the
+preview and only on HTML published as-is. Width and height have no **◇** for
+variables, a text style from Insert can be added but not applied to a layer
+already on the page, **Put back** keeps a detached layer's fixed width, the
 eyedropper needs a Chromium-based browser, and a layer the page's own script
 made cannot be moved or deleted, since it is not in the file.
 → [[Editing a prototype]]
